@@ -1,0 +1,49 @@
+/************************************************************
+VARS
+************************************************************/
+/******************************
+Colors
+******************************/
+$blue: #1d67a7;
+$green: #7ac143;
+$purple: #823579;
+$violet: #ee3388;
+
+$white: #fefefb;
+$greyLt: #f0f0f0;
+$greyMd: #eeeeee;
+$greyDk: #4d4d4d;
+$black: #231f20;
+
+/******************************
+Sizes
+******************************/
+$small: 380px;
+$s-m: 640px;
+$medium: 768px;
+$m-l: 960px;
+$large: 1024px;
+$xl: 1280px;
+
+/******************************
+Fonts
+******************************/
+
+$heading: "Proxima Nova", "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$mono: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+$sans: "Proxima Nova", "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif: "Baskerville", "calluna", Georgia, Times, "Times New Roman", serif;
+
+/******************************
+Transition
+******************************/
+$transition-standard: .3s cubic-bezier(0.905, 0.015, 0.65, 0.97) 0s;
+$transition-static: .3s;
+
+@mixin transition($transition: all .3s) {
+  -webkit-transition: $transition;  
+  -moz-transition: $transition;
+  -ms-transition: $transition; 
+  -o-transition: $transition;  
+  transition: $transition;
+}
