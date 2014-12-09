@@ -1,37 +1,7 @@
-.header-content {
-  display: table;
-  overflow: hidden;
-  width: 100%;
-  z-index: 1;
-  &:after {
-    content: "";
-    background: url(../images/bg_head.jpg) 50% 50% / cover, $white;
-    -moz-filter: blur(.25em);
-    -ms-filter: blur(.25em);
-    -webkit-filter: blur(.25em);
-    filter: blur(.25em);
-    opacity: 0.15;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;   
-  }
-  &:before {
-    content: "";
-    background: $black;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;
-  }
-  .logo {
-    display: table-cell;
-    padding: 2em 1em;
-    text-align: center;
-    vertical-align: middle;
-  }
+.station-header {
+  background: $line_blue;
+  color: $white;
+}
+.card {
+
 }

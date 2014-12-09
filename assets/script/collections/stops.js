@@ -43,6 +43,10 @@ define([
     line_yellow: function() {
       return this.where({Yellow: '1'});
     },
+
+    comparator: function(stop) {
+      return stop.get('ROUTE_LIST');
+    }
     
   });
 

@@ -13,6 +13,8 @@ define([
       'STATION_NAME':'',
       'STATION_DESCRIPTIVE_NAME':'',
       'PARENT_STOP_ID':0,
+      'STOP_URL':'',
+      'ROUTE_LIST':'',
       'ADA':'0',
       'Red':'0',
       'Blue':'0',
@@ -26,9 +28,20 @@ define([
     },
 
     initialize: function() {
-      if (!this.get('STOP_ID')) {
-        this.set({'STOP_ID': this.defaults.STOP_ID});
-      }
+      this.set({'STOP_URL': 'http://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=a3da90a8f09e423fb3084498e9889227&mapid='+(this.get('PARENT_STOP_ID'))});
+      
+      var routes = [];
+
+      if(this.get('Red') === '1') {routes.push('red');}
+      if(this.get('Blue') === '1') {routes.push('red');}
+      if(this.get('Brn') === '1') {routes.push('red');}
+      if(this.get('G') === '1') {routes.push('green');}
+      if(this.get('P') === '1') {routes.push('purple');}
+      if(this.get('Pexp') === '1') {routes.push('pexp');}
+      if(this.get('Y') === '1') {routes.push('yellow');}
+      if(this.get('Pink') === '1') {routes.push('pink');}
+      if(this.get('Org') === '1') {routes.push('orange');}
+      this.set({'ROUTE_LIST': routes});
     },
   });
   return StopModel;

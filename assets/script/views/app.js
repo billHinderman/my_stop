@@ -25,7 +25,7 @@ define([
     },
 
     render: function() {
-      this.$el.html(stopsTemplate);
+      this.$el.html(stopsTemplate); 
     },
 
     addOne: function(stop) {
@@ -33,7 +33,6 @@ define([
       this.$("#tweet-list").append(view.render().el);
     },
 
-    // Add all items in the **Todos** collection at once.
     addAll: function() {
       StopsCollection.each(this.addOne);
     },
