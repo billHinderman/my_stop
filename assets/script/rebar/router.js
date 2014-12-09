@@ -10,6 +10,7 @@ define([
   
   var AppRouter = Backbone.Router.extend({
     routes: {
+      'routes': 'showRoutes',
       'stops': 'showStops',
       '*actions': 'showStops'
     }
@@ -19,8 +20,14 @@ define([
 
     var app_router = new AppRouter;
 
-    app_router.on('route:showStops', function () {
-    
+    app_router.on('route:showRoutes', function () {    
+        // Like above, call render but know that this view has nested sub views which 
+        // handle loading and displaying data from the GitHub API  
+        var appView = new AppView();
+        
+    });
+
+    app_router.on('route:showStops', function () {    
         // Like above, call render but know that this view has nested sub views which 
         // handle loading and displaying data from the GitHub API  
         var appView = new AppView();
@@ -32,6 +39,7 @@ define([
     // outside of an on-route function to have it loaded no matter which page is
     // loaded initially.
     var headerView = new HeaderView();
+    var navView = new NavView();
     var footerView = new FooterView();
 
     Backbone.history.start();

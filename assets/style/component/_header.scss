@@ -17,10 +17,43 @@
 
 .list-routes {
   list-style-type: none;
- li {
+ .route {
+  color: $white;
   display: block;
-  float: left;
+  font-weight: bold;
   height: 120px;
-  width: 100%;
- } 
+  @media screen and (min-width: $s-m) {
+    float: left;
+    height: 180px;
+    width: 50%;
+  }
+  @media screen and (min-width: $large) {
+    height: 240px;
+    width: 25%;
+  }
+ }
+ .route-blue {
+  background: $line_blue;
+ }
+ .route-brown {
+  background: $line_brown;
+ }
+ .route-green {
+  background: $line_green;
+ }
+ .route-orange {
+  background: $line_orange;
+ }
+ .route-pink {
+  background: $line_pink;
+ }
+ .route-purple {
+  background: $line_purple;
+ }
+ .route-red {
+  background: $line_red;
+ }
+ .route-yellow {
+  background: $line_yellow;
+ }
 }
