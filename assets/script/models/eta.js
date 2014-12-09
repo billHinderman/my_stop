@@ -26,7 +26,7 @@ define([
       } else {
         var prdt = new Date(this.get('prdt'));
         var arrt = new Date(this.get('arrT'));
-        var arrMinutes = prdt.getMinutes() - arrt.getMinutes();
+        var arrMinutes =  Math.round((Math.abs(prdt - arrt))/60000);
         this.set({'dateTime':arrMinutes});
       }
     },

@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:300,400,700);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -175,7 +176,7 @@ body {
 Font Options
 ******************************/
 .f-heading {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .f-mono {
   font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; }
@@ -453,4 +454,20 @@ submit.disabled, submit:disabled,
 
 .station-header {
   background: #00a1de;
-  color: #fdfdfd; }
+  padding: 2em 1em;
+  text-align: center; }
+  .station-header small {
+    color: #fdfdfd;
+    display: block;
+    font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    padding-top: .5em;
+    text-transform: uppercase; }
+
+.list-routes {
+  list-style-type: none; }
+  .list-routes li {
+    display: block;
+    float: left;
+    height: 120px;
+    width: 100%; }

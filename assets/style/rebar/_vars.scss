@@ -37,8 +37,9 @@ $xl: 1280px;
 /******************************
 Fonts
 ******************************/
+@import url(http://fonts.googleapis.com/css?family=Oswald:300,400,700);
 
-$heading: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$heading: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $mono: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
 $sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $serif: "Baskerville", "calluna", Georgia, Times, "Times New Roman", serif;
