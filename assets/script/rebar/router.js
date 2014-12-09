@@ -10,9 +10,9 @@ define([
   
   var AppRouter = Backbone.Router.extend({
     routes: {
-      'routes': 'showRoutes',
-      'stops': 'showStops',
-      '*actions': 'showStops'
+      'routes/:route_name': 'showRoutes',
+      'stops/:stop_id': 'showStops',
+      '*default': 'showStops'
     }
   });
   
