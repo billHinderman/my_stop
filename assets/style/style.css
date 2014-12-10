@@ -466,33 +466,39 @@ submit.disabled, submit:disabled,
 
 .list-routes {
   list-style-type: none; }
-  .list-routes .route {
-    color: #fdfdfd;
-    display: block;
-    font-weight: bold;
-    height: 120px; }
+  .list-routes li {
+    display: table;
+    height: 120px;
+    width: 100%; }
     @media screen and (min-width: 640px) {
-      .list-routes .route {
+      .list-routes li {
         float: left;
         height: 180px;
         width: 50%; } }
     @media screen and (min-width: 1024px) {
-      .list-routes .route {
+      .list-routes li {
         height: 240px;
         width: 25%; } }
+  .list-routes .route {
+    background: #fdfdfd;
+    display: table-cell;
+    font-weight: bold;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%; }
   .list-routes .route-blue {
-    background: #00a1de; }
+    color: #00a1de; }
   .list-routes .route-brown {
-    background: #62361b; }
+    color: #62361b; }
   .list-routes .route-green {
-    background: #009b3a; }
+    color: #009b3a; }
   .list-routes .route-orange {
-    background: #f9461c; }
+    color: #f9461c; }
   .list-routes .route-pink {
-    background: #e27ea6; }
+    color: #e27ea6; }
   .list-routes .route-purple {
-    background: #522398; }
+    color: #522398; }
   .list-routes .route-red {
-    background: #c60c30; }
+    color: #c60c30; }
   .list-routes .route-yellow {
-    background: #f9e300; }
+    color: #f9e300; }

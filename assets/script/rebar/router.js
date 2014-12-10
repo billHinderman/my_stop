@@ -3,16 +3,16 @@ define([
   'underscore',
   'backbone',
   'assets/script/views/component/HeaderView.js',
-  'assets/script/views/component/NavView.js',
+  'assets/script/views/nav.js',
   'assets/script/views/component/FooterView.js',
-'assets/script/views/app.js',
-], function($, _, Backbone, HeaderView, NavView, FooterView, AppView) {
+'assets/script/views/stops.js',
+], function($, _, Backbone, HeaderView, NavView, FooterView, StopsView) {
   
   var AppRouter = Backbone.Router.extend({
     routes: {
-      'routes/:route_name': 'showRoutes',
-      'stops/:stop_id': 'showStops',
-      '*default': 'showStops'
+      'routes/:LINE': 'showRoutes',
+      'routes/:LINE/stops/:PARENT_STOP_ID': 'showStops',
+      '*actions': 'renderAll'
     }
   });
   
@@ -20,18 +20,19 @@ define([
 
     var app_router = new AppRouter;
 
-    app_router.on('route:showRoutes', function () {    
+    app_router.on('route:showRoutes', function (LINE) {    
         // Like above, call render but know that this view has nested sub views which 
-        // handle loading and displaying data from the GitHub API  
-        var appView = new AppView();
-        
+        // handle loading and displaying data from the GitHub API 
+        //var routeView = new RouteView();
+        //routeView.render();
+        $('#content').replaceWith('hello');
     });
 
-    app_router.on('route:showStops', function () {    
+    app_router.on('route:renderAll', function () {    
         // Like above, call render but know that this view has nested sub views which 
         // handle loading and displaying data from the GitHub API  
-        var appView = new AppView();
-        appView.render();
+        var stopsView = new StopsView();
+        stopsView.render();
     });
 
     // Unlike the above, we don't call render on this view as it will handle
@@ -40,6 +41,7 @@ define([
     // loaded initially.
     var headerView = new HeaderView();
     var navView = new NavView();
+    navView.render();
     var footerView = new FooterView();
 
     Backbone.history.start();

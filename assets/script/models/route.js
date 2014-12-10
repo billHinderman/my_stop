@@ -5,9 +5,9 @@ define([
 
   var RouteModel = Backbone.Model.extend({
     defaults : {
-      'name':'',
+      'LINE':'',
       'stops':[],
-      'rt',
+      'DISPLAY_NAME':'',
     },
 
     initialize: function() {

@@ -2,31 +2,45 @@ define([
   'jquery',
   'underscore',
   'backbone',
-  'text!templates/page/stop.html'
-], function($, _, Backbone, stopTemplate){
-    var StopView = Backbone.View.extend({
-    //... is a list tag.
-    tagName:  "li",
+  '../models/stop.js',
+  '../collections/stops.js',
+  './stop.js',
+  'text!templates/page/_page_container.html'
+], function($, _, Backbone, StopModel, StopsCollection, StopView, stopsTemplate){
 
-    // Cache the template function for a single item.
-    template: _.template(stopTemplate),
-
+  var StopsView = Backbone.View.extend({
+    el: $("#content"),
+    
     events: {
+      'click .summary-toggle .toggle' : 'toggleView'
     },
 
+    initialize: function() {
+      _.bindAll(this, 'addOne', 'addAll', 'render');
 
-    initialize: function(){
-      _.bindAll(this, 'render');
-      this.model.bind('change', this.render);
-      this.model.view = this;
+      StopsCollection.bind('add',     this.addOne);
+      StopsCollection.bind('reset',   this.addAll);
+
+      StopsCollection.fetch();
     },
 
-    render: function(){
-      $(this.el).html(this.template(this.model.toJSON()));
-      return this;
+    render: function() {
+      this.$el.html(stopsTemplate); 
     },
+
+    addOne: function(stop) {
+      var view = new StopView({model: stop});
+      this.$("#tweet-list").append(view.render().el);
+    },
+
+    addAll: function() {
+      StopsCollection.each(this.addOne);
+    },
+    
+    toggleView: function(e) {
+      
+    }
   });
 
-  return StopView;
+  return StopsView;
 });
-

@@ -17,43 +17,51 @@
 
 .list-routes {
   list-style-type: none;
+  li {
+    display: table;
+    height: 120px;
+    width: 100%;
+    @media screen and (min-width: $s-m) {
+      float: left;
+      height: 180px;
+      width: 50%;
+    }
+    @media screen and (min-width: $large) {
+      height: 240px;
+      width: 25%;
+    }
+  }
  .route {
-  color: $white;
-  display: block;
+  background: $white;
+  display: table-cell;
   font-weight: bold;
-  height: 120px;
-  @media screen and (min-width: $s-m) {
-    float: left;
-    height: 180px;
-    width: 50%;
-  }
-  @media screen and (min-width: $large) {
-    height: 240px;
-    width: 25%;
-  }
+  vertical-align: middle;
+  text-align: center;
+  width: 100%;
+  
  }
  .route-blue {
-  background: $line_blue;
+  color: $line_blue;
  }
  .route-brown {
-  background: $line_brown;
+  color: $line_brown;
  }
  .route-green {
-  background: $line_green;
+  color: $line_green;
  }
  .route-orange {
-  background: $line_orange;
+  color: $line_orange;
  }
  .route-pink {
-  background: $line_pink;
+  color: $line_pink;
  }
  .route-purple {
-  background: $line_purple;
+  color: $line_purple;
  }
  .route-red {
-  background: $line_red;
+  color: $line_red;
  }
  .route-yellow {
-  background: $line_yellow;
+  color: $line_yellow;
  }
 }
