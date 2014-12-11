@@ -38,7 +38,6 @@ define([
     app_router.on('route:showEtas', function (LINE,PARENT_STOP_ID) {    
         // Like above, call render but know that this view has nested sub views which 
         // handle loading and displaying data from the GitHub API  
-       alert(LINE); 
     });
 
     // Unlike the above, we don't call render on this view as it will handle
@@ -50,7 +49,7 @@ define([
     navView.render();
     var footerView = new FooterView();
 
-    Backbone.history.start({pushState: true});
+    Backbone.history.start();
   };
   return { 
     initialize: initialize

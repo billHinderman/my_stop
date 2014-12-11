@@ -54,7 +54,7 @@ define([
     },
 
     comparator: function(stop) {
-      return [stop.get('distance'),stop.get('trDr')];
+      return stop.get('trDr');
     }
     
   });

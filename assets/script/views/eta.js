@@ -6,7 +6,8 @@ define([
 ], function($, _, Backbone, etaTemplate){
     var EtaView = Backbone.View.extend({
     //... is a list tag.
-    tagName:  "li",
+    tagName:  'li',
+    className: 'eta float-clear',
 
     // Cache the template function for a single item.
     template: _.template(etaTemplate),
