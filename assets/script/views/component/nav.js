@@ -2,9 +2,9 @@ define([
   'jquery',
   'underscore',
   'backbone',
-  '../models/route.js',
-  '../collections/routes.js',
-  './routes.js',
+  '../../models/route.js',
+  '../../collections/routes.js',
+  '../routes.js',
   'text!templates/component/_nav.html'
 ], function($, _, Backbone, RouteModel, RoutesCollection, RouteView, navTemplate){
 

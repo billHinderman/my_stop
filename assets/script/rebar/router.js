@@ -2,9 +2,9 @@ define([
   'jquery',
   'underscore',
   'backbone',
-  'assets/script/views/component/HeaderView.js',
-  'assets/script/views/nav.js',
-  'assets/script/views/component/FooterView.js',
+  'assets/script/views/component/header.js',
+  'assets/script/views/component/nav.js',
+  'assets/script/views/component/footer.js',
 'assets/script/views/stops.js',
 ], function($, _, Backbone, HeaderView, NavView, FooterView, StopsView) {
   
@@ -38,7 +38,7 @@ define([
     app_router.on('route:showEtas', function (LINE,PARENT_STOP_ID) {    
         // Like above, call render but know that this view has nested sub views which 
         // handle loading and displaying data from the GitHub API  
-        
+       alert(LINE); 
     });
 
     // Unlike the above, we don't call render on this view as it will handle
@@ -50,7 +50,7 @@ define([
     navView.render();
     var footerView = new FooterView();
 
-    Backbone.history.start();
+    Backbone.history.start({pushState: true});
   };
   return { 
     initialize: initialize

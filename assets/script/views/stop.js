@@ -31,14 +31,14 @@ define([
 
     pollXML: function(e) {
       e.preventDefault();
-      var ctaUrl = $(e.target).attr('href');
-      var displayUrl=$(e.target).data('href');
+      var ctaUrl = $(e.target).data('href');
+      var displayUrl=$(e.target).attr('href');
       var etasCollection = new EtasCollection([],{apiUrl: ctaUrl});
       etasCollection.fetch();
       console.log(etasCollection);
       var view = new EtasView({collection: etasCollection});
       view.render();
-      app_router.navigate(displayUrl, {trigger: false});
+      app_router.navigate(displayUrl, {trigger: true});
     }
   });
 

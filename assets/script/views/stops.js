@@ -5,7 +5,7 @@ define([
   '../models/stop.js',
   '../collections/stops.js',
   './stop.js',
-  'text!templates/page/_page_container.html'
+  'text!templates/page/stops.html'
 ], function($, _, Backbone, StopModel, StopsCollection, StopView, stopsTemplate){
 
   var StopsView = Backbone.View.extend({
@@ -26,7 +26,7 @@ define([
 
     addOneStop: function(stop) {
       var view = new StopView({model: stop});
-      this.$("#tweet-list").append(view.render().el);
+      this.$("#stops-list").append(view.render().el);
     },
 
     addAllStops: function() {

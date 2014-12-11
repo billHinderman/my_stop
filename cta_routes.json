@@ -1,49 +1,57 @@
 {
   "routes": [
     {
-      "LINE":"red",
+      "LINE":"Red",
+      "LINE_NAME":"red",
       "DISPLAY_NAME":"Red",
       "TAG":"Red",
       "STOPS":[123,123]
     },
     {
-      "LINE":"blue",
+      "LINE":"Blue",
+      "LINE_NAME":"blue",
       "DISPLAY_NAME":"Blue",
       "TAG":"Red",
       "STOPS":[123,123]
     },
     {
-      "LINE":"brown",
+      "LINE":"Brn",
+      "LINE_NAME":"brown",
       "DISPLAY_NAME":"Brown",
       "TAG":"Red",
       "STOPS":[123,123]
     },
     {
-      "LINE":"green",
+      "LINE":"G",
+      "LINE_NAME":"green",
       "DISPLAY_NAME":"Green",
       "TAG":"Red",
       "STOPS":[123,123]
     },
     {
-      "LINE":"orange",
+      "LINE":"Org",
+      "LINE_NAME":"orange",
       "DISPLAY_NAME":"Orange",
       "TAG":"Red",
       "STOPS":[123,123]
     },
     {
-      "LINE":"purple",
+      "LINE":"P,Pexp",
+      "LINE_NAME":"purple",
       "DISPLAY_NAME":"Purple",
       "TAG":"Red",
       "STOPS":[123,123]
     },
     {
-      "LINE":"yellow",
+      "LINE":"Y",
+      "LINE_NAME":"yellow",
       "DISPLAY_NAME":"Yellow",
       "TAG":"Red",
       "STOPS":[123,123]
     },
     {
-      "LINE":"pink",
+      "LINE":"Pink",
+      "LINE_NAME":"pink",
       "DISPLAY_NAME":"Pink",
       "TAG":"Red",
       "STOPS":[123,123]
