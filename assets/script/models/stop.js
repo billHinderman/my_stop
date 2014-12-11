@@ -14,6 +14,7 @@ define([
       'STATION_DESCRIPTIVE_NAME':'',
       'PARENT_STOP_ID':0,
       'STOP_URL':'',
+      'DISPLAY_URL':'',
       'ROUTE_LIST':'',
       'ADA':'0',
       'Red':'0',
@@ -42,6 +43,8 @@ define([
       if(this.get('Pink') === '1') {routes.push('pink');}
       if(this.get('Org') === '1') {routes.push('orange');}
       this.set({'ROUTE_LIST': routes});
+
+      this.set({'DISPLAY_URL': '/'+(this.get('ROUTE_LIST'))+'/'+(this.get('PARENT_STOP_ID'))});
     },
   });
   return StopModel;

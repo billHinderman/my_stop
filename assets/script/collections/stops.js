@@ -11,42 +11,6 @@ define([
     parse: function(data) {
       return data.stops;
     },
-
-    line_blue: function() {
-      return this.where({Blue: '1'});
-    },
-
-    line_brown: function() {
-      return this.where({Brn: '1'});
-    },
-
-    line_green: function() {
-      return this.where({G: '1'});
-    },
-
-    line_orange: function() {
-      return this.where({Org: '1'});
-    },
-
-    line_pink: function() {
-      return this.where({Pink: '1'});
-    },
-
-    line_purple: function() {
-      return this.where({P: '1'});
-    },
-
-    line_red: function() {
-      return this.where({Red: '1'});
-    },
-
-    line_yellow: function() {
-      return this.where({Yellow: '1'});
-    },
-
-    comparator: function(stop) {
-      return stop.get('ROUTE_LIST');
-    }
     
   });
 

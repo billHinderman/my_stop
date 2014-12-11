@@ -10,16 +10,12 @@ define([
 
   var StopsView = Backbone.View.extend({
     el: $("#content"),
-    
-    events: {
-      'click .summary-toggle .toggle' : 'toggleView'
-    },
 
     initialize: function() {
-      _.bindAll(this, 'addOne', 'addAll', 'render');
+      _.bindAll(this, 'addOneStop', 'addAllStops', 'render');
 
-      StopsCollection.bind('add',     this.addOne);
-      StopsCollection.bind('reset',   this.addAll);
+      StopsCollection.bind('add',     this.addOneStop);
+      StopsCollection.bind('reset',   this.addAllStops);
 
       StopsCollection.fetch();
     },
@@ -28,18 +24,14 @@ define([
       this.$el.html(stopsTemplate); 
     },
 
-    addOne: function(stop) {
+    addOneStop: function(stop) {
       var view = new StopView({model: stop});
       this.$("#tweet-list").append(view.render().el);
     },
 
-    addAll: function() {
-      StopsCollection.each(this.addOne);
+    addAllStops: function() {
+      StopsCollection.each(this.addOneStop);
     },
-    
-    toggleView: function(e) {
-      
-    }
   });
 
   return StopsView;

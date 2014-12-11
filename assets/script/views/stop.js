@@ -2,8 +2,10 @@ define([
   'jquery',
   'underscore',
   'backbone',
+  './etas.js',
+  '../collections/etas.js',
   'text!templates/page/stop.html'
-], function($, _, Backbone, stopTemplate){
+], function($, _, Backbone, EtasView, EtasCollection, stopTemplate){
     var StopView = Backbone.View.extend({
     //... is a list tag.
     tagName:  "li",
@@ -29,13 +31,14 @@ define([
 
     pollXML: function(e) {
       e.preventDefault();
-      $.ajax({
-        url: $(e.target).attr('href')
-      }).done(function(data) {
-        //var etas = data.getElementsByTagName('eta')
-        //console.log(etas);
-        var EtasCollection = new EtasCollection();
-      });
+      var ctaUrl = $(e.target).attr('href');
+      var displayUrl=$(e.target).data('href');
+      var etasCollection = new EtasCollection([],{apiUrl: ctaUrl});
+      etasCollection.fetch();
+      console.log(etasCollection);
+      var view = new EtasView({collection: etasCollection});
+      view.render();
+      app_router.navigate(displayUrl, {trigger: false});
     }
   });
 

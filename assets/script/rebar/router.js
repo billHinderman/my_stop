@@ -10,22 +10,22 @@ define([
   
   var AppRouter = Backbone.Router.extend({
     routes: {
-      'routes/:LINE': 'showRoutes',
-      'routes/:LINE/stops/:PARENT_STOP_ID': 'showStops',
+      ':LINE': 'showRoutes',
+      ':LINE/:PARENT_STOP_ID': 'showEtas',
       '*actions': 'renderAll'
     }
   });
   
   var initialize = function(){
 
-    var app_router = new AppRouter;
+    app_router = new AppRouter;
 
     app_router.on('route:showRoutes', function (LINE) {    
         // Like above, call render but know that this view has nested sub views which 
         // handle loading and displaying data from the GitHub API 
         //var routeView = new RouteView();
         //routeView.render();
-        $('#content').replaceWith('hello');
+        $('#content').append('hello');
     });
 
     app_router.on('route:renderAll', function () {    
@@ -33,6 +33,12 @@ define([
         // handle loading and displaying data from the GitHub API  
         var stopsView = new StopsView();
         stopsView.render();
+    });
+
+    app_router.on('route:showEtas', function (LINE,PARENT_STOP_ID) {    
+        // Like above, call render but know that this view has nested sub views which 
+        // handle loading and displaying data from the GitHub API  
+        
     });
 
     // Unlike the above, we don't call render on this view as it will handle
