@@ -12,7 +12,7 @@
   }
 }
 .eta {
-  box-shadow: 0px 1px 3px -1px $black;
+  box-shadow: 0px 2px 7px -3px $black;
   display: block;
   padding: 1em;
   margin: 1em;
@@ -29,51 +29,76 @@
 
 .list-routes {
   list-style-type: none;
+  overflow-y: scroll;
   li {
     display: table;
-    height: 120px;
-    width: 100%;
-    @media screen and (min-width: $s-m) {
-      float: left;
-      height: 180px;
-      width: 50%;
-    }
-    @media screen and (min-width: $large) {
-      height: 240px;
-      width: 25%;
+    float: left;
+    height: 25vh;
+    width: 50%;
+    @media screen and (min-width: $m-l) {
+      height: 12.5vh;
+      width: 100%;
     }
   }
  .route {
-  background: $white;
+  box-shadow: 0 0 3px -1px $black;
+  color: $white;
   display: table-cell;
   font-weight: bold;
   vertical-align: middle;
-  text-align: center;
+  padding-right: 2em;
+  position: relative;
+  text-align: right;
   width: 100%;
-  
+  p {
+    font-family: $heading;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+  &:after {
+    content: "";
+    background: $white;
+    border-radius: 50%;
+    height: 3em;
+    position: absolute;
+    top: 30%;
+    left: 1.5em;
+    width: 3em;
+  }
  }
  .route-blue {
-  color: $line_blue;
+  background: $blue;
  }
  .route-brown {
-  color: $line_brown;
+  background: $brown;
  }
  .route-green {
-  color: $line_green;
+  background: $green;
  }
  .route-orange {
-  color: $line_orange;
+  background: $orange;
  }
  .route-pink {
-  color: $line_pink;
+  background: $pink;
  }
  .route-purple {
-  color: $line_purple;
+  background: $purple;
  }
  .route-red {
-  color: $line_red;
+  background: $red;
  }
  .route-yellow {
-  color: $line_yellow;
+  background: $yellow;
  }
+}
+
+
+#navigation {
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 320px;
+}
+#container {
+  margin-left: 320px;
 }

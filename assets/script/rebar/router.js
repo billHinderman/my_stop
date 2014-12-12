@@ -27,7 +27,7 @@ define([
         // handle loading and displaying data from the GitHub API 
         //var routeView = new RouteView();
         //routeView.render();
-        $('#content').append('hello');
+        $('#content').html('');
     });
 
     app_router.on('route:renderAll', function () {    

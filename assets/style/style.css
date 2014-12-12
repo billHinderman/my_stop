@@ -330,7 +330,7 @@ button,
 input[type="submit"],
 .submit:visited,
 .button:visited {
-  background: #7ac143;
+  background: #f0f0f0;
   border: none;
   border-radius: 3px;
   color: #fdfdfd;
@@ -353,7 +353,7 @@ input[type="submit"],
   input[type="submit"]:hover,
   .submit:visited:hover,
   .button:visited:hover {
-    background: #6eb03a;
+    background: #e3e3e3;
     color: #fdfdfd; }
 
 /******************************
@@ -389,24 +389,24 @@ submit.disabled, submit:disabled,
   margin-left: -5.25em; }
 
 .toggle.on {
-  background: #7ac143; }
+  background: #f0f0f0; }
 
 .toggle.off {
-  background: #ee3388; }
+  background: #f0f0f0; }
 
 .toggle.on:hover {
   background: #fdfdfd; }
   .toggle.on:hover .toggle-option {
     color: #231f20; }
     .toggle.on:hover .toggle-option:after {
-      background: #7ac143; }
+      background: #f0f0f0; }
 
 .toggle.off:hover {
   background: #fdfdfd; }
   .toggle.off:hover .toggle-option {
     color: #231f20; }
     .toggle.off:hover .toggle-option:after {
-      background: #ee3388; }
+      background: #f0f0f0; }
 
 .toggle-option {
   color: #fdfdfd;
@@ -465,7 +465,7 @@ submit.disabled, submit:disabled,
     text-transform: uppercase; }
 
 .eta {
-  box-shadow: 0px 1px 3px -1px #231f20;
+  box-shadow: 0px 2px 7px -3px #231f20;
   display: block;
   padding: 1em;
   margin: 1em;
@@ -479,40 +479,62 @@ submit.disabled, submit:disabled,
   float: right; }
 
 .list-routes {
-  list-style-type: none; }
+  list-style-type: none;
+  overflow-y: scroll; }
   .list-routes li {
     display: table;
-    height: 120px;
-    width: 100%; }
-    @media screen and (min-width: 640px) {
+    float: left;
+    height: 25vh;
+    width: 50%; }
+    @media screen and (min-width: 960px) {
       .list-routes li {
-        float: left;
-        height: 180px;
-        width: 50%; } }
-    @media screen and (min-width: 1024px) {
-      .list-routes li {
-        height: 240px;
-        width: 25%; } }
+        height: 12.5vh;
+        width: 100%; } }
   .list-routes .route {
-    background: #fdfdfd;
+    box-shadow: 0 0 3px -1px #231f20;
+    color: #fdfdfd;
     display: table-cell;
     font-weight: bold;
     vertical-align: middle;
-    text-align: center;
+    padding-right: 2em;
+    position: relative;
+    text-align: right;
     width: 100%; }
+    .list-routes .route p {
+      font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: 100;
+      text-transform: uppercase; }
+    .list-routes .route:after {
+      content: "";
+      background: #fdfdfd;
+      border-radius: 50%;
+      height: 3em;
+      position: absolute;
+      top: 30%;
+      left: 1.5em;
+      width: 3em; }
   .list-routes .route-blue {
-    color: #00a1de; }
+    background: #2196f3; }
   .list-routes .route-brown {
-    color: #62361b; }
+    background: #795548; }
   .list-routes .route-green {
-    color: #009b3a; }
+    background: #4caf50; }
   .list-routes .route-orange {
-    color: #f9461c; }
+    background: #ff9800; }
   .list-routes .route-pink {
-    color: #e27ea6; }
+    background: #e91e63; }
   .list-routes .route-purple {
-    color: #522398; }
+    background: #9c27b0; }
   .list-routes .route-red {
-    color: #c60c30; }
+    background: #f44336; }
   .list-routes .route-yellow {
-    color: #f9e300; }
+    background: #ffeb3b; }
+
+#navigation {
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 320px; }
+
+#container {
+  margin-left: 320px; }

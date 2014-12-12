@@ -35,8 +35,7 @@ define([
       if(this.get('Blue') === '1') {routes.push('blue');}
       if(this.get('Brn') === '1') {routes.push('red');}
       if(this.get('G') === '1') {routes.push('green');}
-      if(this.get('P') === '1') {routes.push('purple');}
-      if(this.get('Pexp') === '1') {routes.push('pexp');}
+      if(this.get('P') === '1' || this.get('Pexp') === 1) {routes.push('purple');}
       if(this.get('Y') === '1') {routes.push('yellow');}
       if(this.get('Pink') === '1') {routes.push('pink');}
       if(this.get('Org') === '1') {routes.push('orange');}

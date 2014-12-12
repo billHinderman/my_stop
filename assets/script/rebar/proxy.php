@@ -18,7 +18,7 @@ if($rt) {
   } elseif($rt == 'orange') {
     $rt = 'Org';
   } elseif($rt == 'purple') {
-    $rt = 'P,Pexp';
+    $rt = 'P';
   } elseif($rt == 'yellow') {
     $rt = 'Y';
   } elseif($rt == 'pink') {

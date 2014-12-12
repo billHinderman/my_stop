@@ -9,7 +9,7 @@ button,
 input[type="submit"], 
 .submit:visited, 
 .button:visited {
-  background: $green;
+  background: $greyLt;
   border: none;
   border-radius: 3px;
   color: $white;
@@ -24,7 +24,7 @@ input[type="submit"],
   -webkit-appearance: none;
   @include transition(all $transition-static);
   &:hover {
-    background: darken($green, 5%);
+    background: darken($greyLt, 5%);
     color: $white;
   }
 }
@@ -63,17 +63,17 @@ submit.disabled, submit:disabled,
   margin-left: -5.25em;
 }
 .toggle.on {
-  background: $green;
+  background: $greyLt;
 }
 .toggle.off {
-  background: $violet;
+  background: $greyLt;
 }
 .toggle.on:hover {
   background: $white;
   .toggle-option {
     color: $black;
     &:after {
-      background: $green;
+      background: $greyLt;
     }
   }
 }
@@ -82,7 +82,7 @@ submit.disabled, submit:disabled,
   .toggle-option {
     color: $black;
     &:after {
-      background: $violet;
+      background: $greyLt;
     }
   }
 }
