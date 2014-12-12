@@ -13,7 +13,6 @@ define([
       'STATION_NAME':'',
       'STATION_DESCRIPTIVE_NAME':'',
       'PARENT_STOP_ID':0,
-      'STOP_URL':'',
       'DISPLAY_URL':'',
       'ROUTE_LIST':'',
       'ADA':'0',
@@ -29,12 +28,11 @@ define([
     },
 
     initialize: function() {
-      this.set({'STOP_URL': 'http://cta.billhinderman.com/assets/script/rebar/proxy.php?url=http://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=a3da90a8f09e423fb3084498e9889227&mapid='+(this.get('PARENT_STOP_ID'))});
       
       var routes = [];
 
       if(this.get('Red') === '1') {routes.push('red');}
-      if(this.get('Blue') === '1') {routes.push('red');}
+      if(this.get('Blue') === '1') {routes.push('blue');}
       if(this.get('Brn') === '1') {routes.push('red');}
       if(this.get('G') === '1') {routes.push('green');}
       if(this.get('P') === '1') {routes.push('purple');}
@@ -44,7 +42,7 @@ define([
       if(this.get('Org') === '1') {routes.push('orange');}
       this.set({'ROUTE_LIST': routes});
 
-      this.set({'DISPLAY_URL': '/'+(this.get('ROUTE_LIST'))+'/'+(this.get('PARENT_STOP_ID'))});
+      this.set({'DISPLAY_URL': '#/'+(this.get('ROUTE_LIST'))+'/'+(this.get('PARENT_STOP_ID'))});
     },
   });
   return StopModel;

@@ -2,11 +2,13 @@ define([
   'jquery',
   'underscore',
   'backbone',
+  'assets/script/collections/etas.js',
   'assets/script/views/component/header.js',
   'assets/script/views/component/nav.js',
   'assets/script/views/component/footer.js',
 'assets/script/views/stops.js',
-], function($, _, Backbone, HeaderView, NavView, FooterView, StopsView) {
+'assets/script/views/etas.js',
+], function($, _, Backbone, EtasCollection, HeaderView, NavView, FooterView, StopsView, EtasView) {
   
   var AppRouter = Backbone.Router.extend({
     routes: {
@@ -38,6 +40,11 @@ define([
     app_router.on('route:showEtas', function (LINE,PARENT_STOP_ID) {    
         // Like above, call render but know that this view has nested sub views which 
         // handle loading and displaying data from the GitHub API  
+      var ctaUrl = 'http://cta.billhinderman.com/assets/script/rebar/proxy.php?stop='+PARENT_STOP_ID+'&rt='+LINE;
+      var etasCollection = new EtasCollection([],{apiUrl: ctaUrl});
+      etasCollection.fetch();
+      var view = new EtasView({collection: etasCollection});
+      view.render();
     });
 
     // Unlike the above, we don't call render on this view as it will handle

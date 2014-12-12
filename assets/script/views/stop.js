@@ -13,11 +13,6 @@ define([
     // Cache the template function for a single item.
     template: _.template(stopTemplate),
 
-    events: {
-      'click .stop-link' : 'pollXML'
-    },
-
-
     initialize: function(){
       _.bindAll(this, 'render');
       this.model.bind('change', this.render);
@@ -27,18 +22,6 @@ define([
     render: function(){
       $(this.el).html(this.template(this.model.toJSON()));
       return this;
-    },
-
-    pollXML: function(e) {
-      e.preventDefault();
-      var ctaUrl = $(e.target).data('href');
-      var displayUrl=$(e.target).attr('href');
-      var etasCollection = new EtasCollection([],{apiUrl: ctaUrl});
-      etasCollection.fetch();
-      console.log(etasCollection);
-      var view = new EtasView({collection: etasCollection});
-      view.render();
-      app_router.navigate(displayUrl, {trigger: true});
     },
   });
 
