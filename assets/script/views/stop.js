@@ -39,7 +39,7 @@ define([
       var view = new EtasView({collection: etasCollection});
       view.render();
       app_router.navigate(displayUrl, {trigger: true});
-    }
+    },
   });
 
   return StopView;
