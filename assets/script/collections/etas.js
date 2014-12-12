@@ -49,7 +49,7 @@ define([
     },
 
     fetch: function() {
-        var options = {dataType: 'jsonp text xml', crossDomain: true};
+        var options = {dataType: 'xml'};
         return Backbone.Collection.prototype.fetch.call(this, options);
     },
 

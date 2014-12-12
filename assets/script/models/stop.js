@@ -29,7 +29,7 @@ define([
     },
 
     initialize: function() {
-      this.set({'STOP_URL': 'http://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=a3da90a8f09e423fb3084498e9889227&mapid='+(this.get('PARENT_STOP_ID'))});
+      this.set({'STOP_URL': 'http://cta.billhinderman.com/assets/script/rebar/proxy.php?url=http://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=a3da90a8f09e423fb3084498e9889227&mapid='+(this.get('PARENT_STOP_ID'))});
       
       var routes = [];
 
