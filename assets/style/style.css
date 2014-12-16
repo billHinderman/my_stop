@@ -71,8 +71,32 @@ body {
   color: #231f20; }
 
 #container {
-  background: #00a1de;
-  transition: background .4s; }
+  background: #fdfdfd;
+  min-height: 320px; }
+
+.line-blue #container {
+  background: #2196f3; }
+
+.line-brown #container {
+  background: #795548; }
+
+.line-green #container {
+  background: #4caf50; }
+
+.line-orange #container {
+  background: #ff9800; }
+
+.line-pink #container {
+  background: #e91e63; }
+
+.line-purple #container {
+  background: #9c27b0; }
+
+.line-red #container {
+  background: #f44336; }
+
+.line-yellow #container {
+  background: #ffeb3b; }
 
 ::selection {
   background: #231f20;
@@ -475,7 +499,7 @@ submit.disabled, submit:disabled,
     width: 50%; }
     @media screen and (min-width: 960px) {
       .list-routes li {
-        height: 12.5vh;
+        height: 2.5vh;
         width: 100%; } }
   .list-routes .route {
     box-shadow: 0 0 3px -1px #231f20;
@@ -521,10 +545,24 @@ submit.disabled, submit:disabled,
 
 .eta.route-1 + .eta.route-5,
 .eta.route-5 + .eta.route-1 {
-  margin-bottom: 1em; }
+  margin-top: 1em; }
 
 .destination {
   float: left; }
 
 .distance {
   float: right; }
+
+#stops-list {
+  list-style-type: none; }
+
+.card {
+  background: rgba(253, 253, 253, 0.125);
+  color: #fdfdfd;
+  display: block;
+  padding: 1em;
+  margin: .125em auto;
+  list-style-type: none; }
+  @media screen and (min-width: 1024px) {
+    .card {
+      font-size: 2em; } }

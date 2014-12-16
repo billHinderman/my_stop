@@ -24,25 +24,29 @@ define([
     app_router = new AppRouter;
 
     app_router.on('route:showRoutes', function (LINE) {    
-        // Like above, call render but know that this view has nested sub views which 
-        // handle loading and displaying data from the GitHub API 
-        //var routeView = new RouteView();
-        //routeView.render();
+        $("body").removeClass (function (index, css) {
+          return (css.match (/\bline-\S+/g) || []).join(' ');
+        }).addClass('line-'+LINE);
+
         var lineUrl = './lines/line_'+LINE+'.json';
         var stopsCollection = new StopsCollection([],{apiUrl: lineUrl});
         stopsCollection.fetch();
         var stopsView = new StopsView({collection: stopsCollection});
         stopsView.render();
+
     });
 
-    app_router.on('route:renderAll', function () {    
-        // Like above, call render but know that this view has nested sub views which 
-        // handle loading and displaying data from the GitHub API  
+    app_router.on('route:renderAll', function () {  
+      $("body").removeClass (function (index, css) {
+          return (css.match (/\bline-\S+/g) || []).join(' ');
+        });  
     });
 
     app_router.on('route:showEtas', function (LINE,PARENT_STOP_ID) {    
-        // Like above, call render but know that this view has nested sub views which 
-        // handle loading and displaying data from the GitHub API  
+      $("body").removeClass (function (index, css) {
+          return (css.match (/\bline-\S+/g) || []).join(' ');
+        }).addClass('line-'+LINE);
+
       var ctaUrl = 'http://cta.billhinderman.com/assets/script/rebar/proxy.php?stop='+PARENT_STOP_ID+'&rt='+LINE;
       var etasCollection = new EtasCollection([],{apiUrl: ctaUrl});
       etasCollection.fetch();

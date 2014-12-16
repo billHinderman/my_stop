@@ -15,8 +15,32 @@ body {
   color: $black;
 }
 #container {
-  background: $line_blue;
-  transition: background .4s;
+  background: $white;
+  min-height: 320px;
+}
+.line-blue #container {
+  background: $blue;
+}
+.line-brown #container {
+  background: $brown;
+}
+.line-green #container {
+  background: $green;
+}
+.line-orange #container {
+  background: $orange;
+}
+.line-pink #container {
+  background: $pink;
+}
+.line-purple #container {
+  background: $purple;
+}
+.line-red #container {
+  background: $red;
+}
+.line-yellow #container {
+  background: $yellow;
 }
 ::selection {
   background: $black;

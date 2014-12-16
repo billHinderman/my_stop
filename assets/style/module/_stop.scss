@@ -1,4 +1,8 @@
-.eta {
+#stops-list {
+  list-style-type: none;
+}
+
+.card {
   background: rgba($white,.125);
   color: $white;
   display: block;
@@ -8,14 +12,4 @@
   @media screen and (min-width: $large) {
     font-size: 2em;
   }
-}
-.eta.route-1 + .eta.route-5,
-.eta.route-5 + .eta.route-1 {
-  margin-top: 1em;
-}
-.destination {
-  float: left;
-}
-.distance {
-  float: right;
 }
