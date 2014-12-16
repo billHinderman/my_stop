@@ -1,0 +1,54 @@
+.list-routes {
+  list-style-type: none;
+  overflow-y: scroll;
+  li {
+    display: table;
+    float: left;
+    height: 25vh;
+    width: 50%;
+    @media screen and (min-width: $m-l) {
+      height: 12.5vh;
+      width: 100%;
+    }
+  }
+ .route {
+  box-shadow: 0 0 3px -1px $black;
+  color: $white;
+  display: table-cell;
+  font-weight: bold;
+  vertical-align: middle;
+  padding-right: 2em;
+  position: relative;
+  text-align: right;
+  width: 100%;
+  p {
+    font-family: $heading;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+ }
+ .route-blue {
+  background: $blue;
+ }
+ .route-brown {
+  background: $brown;
+ }
+ .route-green {
+  background: $green;
+ }
+ .route-orange {
+  background: $orange;
+ }
+ .route-pink {
+  background: $pink;
+ }
+ .route-purple {
+  background: $purple;
+ }
+ .route-red {
+  background: $red;
+ }
+ .route-yellow {
+  background: $yellow;
+ }
+}

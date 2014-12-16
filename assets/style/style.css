@@ -71,7 +71,8 @@ body {
   color: #231f20; }
 
 #container {
-  background: #fdfdfd; }
+  background: #00a1de;
+  transition: background .4s; }
 
 ::selection {
   background: #231f20;
@@ -290,7 +291,7 @@ Base
 ******************************/
 a, .link,
 a:visited, .link:visited {
-  color: #00a1de;
+  color: #fdfdfd;
   text-decoration: none;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -464,20 +465,6 @@ submit.disabled, submit:disabled,
     padding-top: .5em;
     text-transform: uppercase; }
 
-.eta {
-  box-shadow: 0px 2px 7px -3px #231f20;
-  display: block;
-  padding: 1em;
-  margin: 1em;
-  list-style-type: none;
-  max-width: 1024px; }
-
-.destination {
-  float: left; }
-
-.distance {
-  float: right; }
-
 .list-routes {
   list-style-type: none;
   overflow-y: scroll; }
@@ -504,15 +491,6 @@ submit.disabled, submit:disabled,
       font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-weight: 100;
       text-transform: uppercase; }
-    .list-routes .route:after {
-      content: "";
-      background: #fdfdfd;
-      border-radius: 50%;
-      height: 3em;
-      position: absolute;
-      top: 30%;
-      left: 1.5em;
-      width: 3em; }
   .list-routes .route-blue {
     background: #2196f3; }
   .list-routes .route-brown {
@@ -530,11 +508,23 @@ submit.disabled, submit:disabled,
   .list-routes .route-yellow {
     background: #ffeb3b; }
 
-#navigation {
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 320px; }
+.eta {
+  background: rgba(253, 253, 253, 0.125);
+  color: #fdfdfd;
+  display: block;
+  padding: 1em;
+  margin: .125em auto;
+  list-style-type: none; }
+  @media screen and (min-width: 1024px) {
+    .eta {
+      font-size: 2em; } }
 
-#container {
-  margin-left: 320px; }
+.eta.route-1 + .eta.route-5,
+.eta.route-5 + .eta.route-1 {
+  margin-bottom: 1em; }
+
+.destination {
+  float: left; }
+
+.distance {
+  float: right; }

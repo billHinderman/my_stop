@@ -11,6 +11,10 @@ define([
   var NavView = Backbone.View.extend({
     el: $("#navigation"),
 
+    events: {
+      'click #nav-toggle' : 'toggleNav',
+    },
+
     initialize: function() {
       _.bindAll(this, 'addOne', 'addAll', 'render');
 
@@ -31,6 +35,10 @@ define([
 
     addAll: function() {
       RoutesCollection.each(this.addOne);
+    },
+
+    toggleNav: function() {
+      $('body').toggleClass('menu');
     },
   });
 

@@ -21,6 +21,7 @@ define([
 
     render: function(){
       $(this.el).html(this.template(this.model.toJSON()));
+      $(this.el).addClass('route-'+this.model.get('trDr'));
       return this;
     },
   });

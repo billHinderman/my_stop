@@ -12,12 +12,11 @@ define([
     el: $("#content"),
 
     initialize: function() {
+      StopsCollection = this.options.collection;
       _.bindAll(this, 'addOneStop', 'addAllStops', 'render');
 
       StopsCollection.bind('add',     this.addOneStop);
       StopsCollection.bind('reset',   this.addAllStops);
-
-      StopsCollection.fetch();
     },
 
     render: function() {

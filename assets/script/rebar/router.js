@@ -2,19 +2,20 @@ define([
   'jquery',
   'underscore',
   'backbone',
+  'assets/script/collections/stops.js',
   'assets/script/collections/etas.js',
   'assets/script/views/component/header.js',
   'assets/script/views/component/nav.js',
   'assets/script/views/component/footer.js',
 'assets/script/views/stops.js',
 'assets/script/views/etas.js',
-], function($, _, Backbone, EtasCollection, HeaderView, NavView, FooterView, StopsView, EtasView) {
+], function($, _, Backbone, StopsCollection, EtasCollection, HeaderView, NavView, FooterView, StopsView, EtasView) {
   
   var AppRouter = Backbone.Router.extend({
     routes: {
       ':LINE': 'showRoutes',
       ':LINE/:PARENT_STOP_ID': 'showEtas',
-      '*actions': 'renderAll'
+      'default': 'renderAll'
     }
   });
   
@@ -27,14 +28,16 @@ define([
         // handle loading and displaying data from the GitHub API 
         //var routeView = new RouteView();
         //routeView.render();
-        $('#content').html('');
+        var lineUrl = './lines/line_'+LINE+'.json';
+        var stopsCollection = new StopsCollection([],{apiUrl: lineUrl});
+        stopsCollection.fetch();
+        var stopsView = new StopsView({collection: stopsCollection});
+        stopsView.render();
     });
 
     app_router.on('route:renderAll', function () {    
         // Like above, call render but know that this view has nested sub views which 
         // handle loading and displaying data from the GitHub API  
-        var stopsView = new StopsView();
-        stopsView.render();
     });
 
     app_router.on('route:showEtas', function (LINE,PARENT_STOP_ID) {    

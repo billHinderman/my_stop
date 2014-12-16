@@ -6,7 +6,13 @@ define([
 
   var StopsCollection = Backbone.Collection.extend({
     model: StopModel,
-    url: './cta_stops.json',
+    url: function() {
+      return this.apiUrl;
+    },
+
+    initialize: function(models, options) {
+      this.apiUrl = options.apiUrl;
+    },
 
     parse: function(data) {
       return data.stops;
@@ -14,6 +20,6 @@ define([
     
   });
 
-  return new StopsCollection;
+  return StopsCollection;
 
 });

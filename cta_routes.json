@@ -4,56 +4,56 @@
       "LINE":"Red",
       "LINE_NAME":"red",
       "DISPLAY_NAME":"Red",
-      "TAG":"Red",
+      "TAG":"The North-South Line",
       "STOPS":[123,123]
     },
     {
       "LINE":"Blue",
       "LINE_NAME":"blue",
       "DISPLAY_NAME":"Blue",
-      "TAG":"Red",
+      "TAG":"The O'Hare-Congress Line",
       "STOPS":[123,123]
     },
     {
       "LINE":"Brn",
       "LINE_NAME":"brown",
       "DISPLAY_NAME":"Brown",
-      "TAG":"Red",
+      "TAG":"The Ravenswood Line",
       "STOPS":[123,123]
     },
     {
       "LINE":"G",
       "LINE_NAME":"green",
       "DISPLAY_NAME":"Green",
-      "TAG":"Red",
+      "TAG":"Harlem to Cottage Grove",
       "STOPS":[123,123]
     },
     {
       "LINE":"Org",
       "LINE_NAME":"orange",
       "DISPLAY_NAME":"Orange",
-      "TAG":"Red",
+      "TAG":"The Gateway to Midway",
       "STOPS":[123,123]
     },
     {
       "LINE":"P,Pexp",
       "LINE_NAME":"purple",
       "DISPLAY_NAME":"Purple",
-      "TAG":"Red",
+      "TAG":"The Evanston Express",
       "STOPS":[123,123]
     },
     {
       "LINE":"Y",
       "LINE_NAME":"yellow",
       "DISPLAY_NAME":"Yellow",
-      "TAG":"Red",
+      "TAG":"The Skokie Swift",
       "STOPS":[123,123]
     },
     {
       "LINE":"Pink",
       "LINE_NAME":"pink",
       "DISPLAY_NAME":"Pink",
-      "TAG":"Red",
+      "TAG":"The Douglas Branch",
       "STOPS":[123,123]
     }
   ]
