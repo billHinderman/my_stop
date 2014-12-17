@@ -1,6 +1,8 @@
 .eta.route-1 + .eta.route-5,
 .eta.route-5 + .eta.route-1 {
+  border-top: .125em solid;
   margin-top: 1em;
+  padding-top: 1em;
 }
 .destination {
   float: left;

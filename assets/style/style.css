@@ -562,7 +562,9 @@ body.menu-open #container {
 
 .eta.route-1 + .eta.route-5,
 .eta.route-5 + .eta.route-1 {
-  margin-top: 1em; }
+  border-top: .125em solid;
+  margin-top: 1em;
+  padding-top: 1em; }
 
 .destination {
   float: left; }
@@ -583,7 +585,6 @@ body.menu-open #container {
   list-style-type: none; }
 
 .card {
-  background: rgba(253, 253, 253, 0.125);
   color: #fdfdfd;
   display: block;
   padding: 1em;
