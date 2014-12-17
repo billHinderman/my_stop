@@ -13,34 +13,36 @@ Main
 body {
   background: $black;
   color: $black;
+  overflow-x: hidden;
+  width: 100%;
 }
 #container {
   background: $white;
-  min-height: 320px;
+  @include transition(margin-left .5s);
 }
 .line-blue #container {
-  background: $blue;
+  background: linear-gradient(to left, $blue 66%, $dark_blue);
 }
 .line-brown #container {
-  background: $brown;
+  background: linear-gradient(to left, $brown 66%, $dark_brown);
 }
 .line-green #container {
-  background: $green;
+  background: linear-gradient(to left, $green 66%, $dark_green);
 }
 .line-orange #container {
-  background: $orange;
+  background: linear-gradient(to left, $orange 66%, $dark_orange);
 }
 .line-pink #container {
-  background: $pink;
+  background: linear-gradient(to left, $pink 66%, $dark_pink);
 }
 .line-purple #container {
-  background: $purple;
+  background: linear-gradient(to left, $purple 66%, $dark_purple);
 }
 .line-red #container {
-  background: $red;
+  background: linear-gradient(to left, $red 66%, $dark_red);
 }
 .line-yellow #container {
-  background: $yellow;
+  background: linear-gradient(to left, $yellow 66%, $dark_yellow);
 }
 ::selection {
   background: $black;

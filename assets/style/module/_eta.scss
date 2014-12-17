@@ -1,21 +1,21 @@
-.eta {
-  background: rgba($white,.125);
-  color: $white;
-  display: block;
-  padding: 1em;
-  margin: .125em auto;
-  list-style-type: none;
-  @media screen and (min-width: $large) {
-    font-size: 2em;
-  }
-}
 .eta.route-1 + .eta.route-5,
 .eta.route-5 + .eta.route-1 {
   margin-top: 1em;
 }
 .destination {
   float: left;
+  small {
+    display: block;
+    font-size: .33em;
+    font-weight: normal;
+  }
 }
 .distance {
   float: right;
+  text-align: right;
+  small {
+    display: block;
+    font-size: .33em;
+    font-weight: normal;
+  }
 }

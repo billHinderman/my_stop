@@ -1,3 +1,16 @@
+body.menu-open #navigation {
+  margin-left: 0;
+}
+body.menu-open #container {
+  margin-left: 320px;
+}
+#navigation {
+  left: 0;
+  margin-left: -320px;
+  position: fixed;
+  @include transition(margin-left .5s);
+  width: 320px;
+}
 .list-routes {
   list-style-type: none;
   overflow-y: scroll;
@@ -28,27 +41,27 @@
   }
  }
  .route-blue {
-  background: $blue;
+  background: linear-gradient(to right, $blue 66%, $dark_blue);
  }
  .route-brown {
-  background: $brown;
+  background: linear-gradient(to right, $brown 66%, $dark_brown);
  }
  .route-green {
-  background: $green;
+  background: linear-gradient(to right, $green 66%, $dark_green);
  }
  .route-orange {
-  background: $orange;
+  background: linear-gradient(to right, $orange 66%, $dark_orange);
  }
  .route-pink {
-  background: $pink;
+  background: linear-gradient(to right, $pink 66%, $dark_pink);
  }
  .route-purple {
-  background: $purple;
+  background: linear-gradient(to right, $purple 66%, $dark_purple);
  }
  .route-red {
-  background: $red;
+  background: linear-gradient(to right, $red 66%, $dark_red);
  }
  .route-yellow {
-  background: $yellow;
+  background: linear-gradient(to right, $yellow 66%, $dark_yellow);
  }
 }

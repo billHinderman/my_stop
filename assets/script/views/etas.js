@@ -20,7 +20,8 @@ define([
     },
 
     render: function() {
-      this.$el.html(etasTemplate); 
+      this.$el.html(etasTemplate);
+      this.$("#etas-info").append('');
     },
 
     addOneEta: function(eta) {

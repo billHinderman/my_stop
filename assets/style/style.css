@@ -68,35 +68,41 @@ Main
 
 body {
   background: #231f20;
-  color: #231f20; }
+  color: #231f20;
+  overflow-x: hidden;
+  width: 100%; }
 
 #container {
   background: #fdfdfd;
-  min-height: 320px; }
+  -webkit-transition: margin-left 0.5s;
+  -moz-transition: margin-left 0.5s;
+  -ms-transition: margin-left 0.5s;
+  -o-transition: margin-left 0.5s;
+  transition: margin-left 0.5s; }
 
 .line-blue #container {
-  background: #2196f3; }
+  background: linear-gradient(to left, #2196f3 66%, #2962ff); }
 
 .line-brown #container {
-  background: #795548; }
+  background: linear-gradient(to left, #795548 66%, #5d4037); }
 
 .line-green #container {
-  background: #4caf50; }
+  background: linear-gradient(to left, #4caf50 66%, #388e3c); }
 
 .line-orange #container {
-  background: #ff9800; }
+  background: linear-gradient(to left, #ff9800 66%, #ff6d00); }
 
 .line-pink #container {
-  background: #e91e63; }
+  background: linear-gradient(to left, #e91e63 66%, #c51162); }
 
 .line-purple #container {
-  background: #9c27b0; }
+  background: linear-gradient(to left, #9c27b0 66%, #7b1fa2); }
 
 .line-red #container {
-  background: #f44336; }
+  background: linear-gradient(to left, #f44336 66%, #d50000); }
 
 .line-yellow #container {
-  background: #ffeb3b; }
+  background: linear-gradient(to left, #ffeb3b 66%, #fbc02d); }
 
 ::selection {
   background: #231f20;
@@ -472,9 +478,10 @@ submit.disabled, submit:disabled,
 
 #content {
   margin: 0 auto;
-  padding: 0 1em 2em;
+  padding: 2em 0;
   position: relative;
   max-width: 1280px;
+  min-height: 320px;
   width: 100%; }
 
 .station-header {
@@ -488,6 +495,27 @@ submit.disabled, submit:disabled,
     font-weight: 300;
     padding-top: .5em;
     text-transform: uppercase; }
+
+#footer {
+  background: #231f20;
+  color: #fdfdfd; }
+
+body.menu-open #navigation {
+  margin-left: 0; }
+
+body.menu-open #container {
+  margin-left: 320px; }
+
+#navigation {
+  left: 0;
+  margin-left: -320px;
+  position: fixed;
+  -webkit-transition: margin-left 0.5s;
+  -moz-transition: margin-left 0.5s;
+  -ms-transition: margin-left 0.5s;
+  -o-transition: margin-left 0.5s;
+  transition: margin-left 0.5s;
+  width: 320px; }
 
 .list-routes {
   list-style-type: none;
@@ -516,32 +544,21 @@ submit.disabled, submit:disabled,
       font-weight: 100;
       text-transform: uppercase; }
   .list-routes .route-blue {
-    background: #2196f3; }
+    background: linear-gradient(to right, #2196f3 66%, #2962ff); }
   .list-routes .route-brown {
-    background: #795548; }
+    background: linear-gradient(to right, #795548 66%, #5d4037); }
   .list-routes .route-green {
-    background: #4caf50; }
+    background: linear-gradient(to right, #4caf50 66%, #388e3c); }
   .list-routes .route-orange {
-    background: #ff9800; }
+    background: linear-gradient(to right, #ff9800 66%, #ff6d00); }
   .list-routes .route-pink {
-    background: #e91e63; }
+    background: linear-gradient(to right, #e91e63 66%, #c51162); }
   .list-routes .route-purple {
-    background: #9c27b0; }
+    background: linear-gradient(to right, #9c27b0 66%, #7b1fa2); }
   .list-routes .route-red {
-    background: #f44336; }
+    background: linear-gradient(to right, #f44336 66%, #d50000); }
   .list-routes .route-yellow {
-    background: #ffeb3b; }
-
-.eta {
-  background: rgba(253, 253, 253, 0.125);
-  color: #fdfdfd;
-  display: block;
-  padding: 1em;
-  margin: .125em auto;
-  list-style-type: none; }
-  @media screen and (min-width: 1024px) {
-    .eta {
-      font-size: 2em; } }
+    background: linear-gradient(to right, #ffeb3b 66%, #fbc02d); }
 
 .eta.route-1 + .eta.route-5,
 .eta.route-5 + .eta.route-1 {
@@ -549,9 +566,18 @@ submit.disabled, submit:disabled,
 
 .destination {
   float: left; }
+  .destination small {
+    display: block;
+    font-size: .33em;
+    font-weight: normal; }
 
 .distance {
-  float: right; }
+  float: right;
+  text-align: right; }
+  .distance small {
+    display: block;
+    font-size: .33em;
+    font-weight: normal; }
 
 #stops-list {
   list-style-type: none; }
@@ -561,7 +587,7 @@ submit.disabled, submit:disabled,
   color: #fdfdfd;
   display: block;
   padding: 1em;
-  margin: .125em auto;
+  margin: 0 auto;
   list-style-type: none; }
   @media screen and (min-width: 1024px) {
     .card {

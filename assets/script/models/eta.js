@@ -32,7 +32,7 @@ define([
         if(this.get('isDly') === '1') {
           this.set({'dateTime':'Delayed'});
         } else {
-          this.set({'dateTime':''+arrMinutes+' minutes'});
+          this.set({'dateTime':''+arrMinutes+' <small>minutes</small>'});
         }
       }
       

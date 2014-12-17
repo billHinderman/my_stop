@@ -12,7 +12,7 @@ define([
     el: $("#navigation"),
 
     events: {
-      'click #nav-toggle' : 'toggleNav',
+      'click' : 'toggleNav',
     },
 
     initialize: function() {
@@ -38,7 +38,7 @@ define([
     },
 
     toggleNav: function() {
-      $('body').toggleClass('menu');
+      $('body').toggleClass('menu-open');
     },
   });
 
