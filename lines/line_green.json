@@ -1,154 +1,154 @@
 {
-  "stations": [
+  "stops": [
     {
       "LINE":"green",
       "STATION":40020,
-      "STATION_NAME":"Harlem/Lake",
+      "STATION_NAME":"Harlem/Lake"
     },
     {
       "LINE":"green",
       "STATION":41350,
-      "STATION_NAME":"Oak Park",
+      "STATION_NAME":"Oak Park"
     },
     {
       "LINE":"green",
       "STATION":40610,
-      "STATION_NAME":"Ridgeland",
+      "STATION_NAME":"Ridgeland"
     },
     {
       "LINE":"green",
       "STATION":41260,
-      "STATION_NAME":"Austin",
+      "STATION_NAME":"Austin"
     },
     {
       "LINE":"green",
       "STATION":40280,
-      "STATION_NAME":"Central",
+      "STATION_NAME":"Central"
     },
     {
       "LINE":"green",
       "STATION":40700,
-      "STATION_NAME":"Laramie",
+      "STATION_NAME":"Laramie"
     },
     {
       "LINE":"green",
       "STATION":40480,
-      "STATION_NAME":"Cicero",
+      "STATION_NAME":"Cicero"
     },
     {
       "LINE":"green",
       "STATION":40030,
-      "STATION_NAME":"Pulaski",
+      "STATION_NAME":"Pulaski"
     },
     {
       "LINE":"green",
       "STATION":41670,
-      "STATION_NAME":"Conservatory-Central Park Drive",
+      "STATION_NAME":"Conservatory-Central Park Drive"
     },
     {
       "LINE":"green",
       "STATION":41070,
-      "STATION_NAME":"Kedzie",
+      "STATION_NAME":"Kedzie"
     },
     {
       "LINE":"green",
       "STATION":41360,
-      "STATION_NAME":"California",
+      "STATION_NAME":"California"
     },
     {
       "LINE":"green",
       "STATION":40170,
-      "STATION_NAME":"Ashland",
+      "STATION_NAME":"Ashland"
     },
     {
       "LINE":"green",
       "STATION":41510,
-      "STATION_NAME":"Morgan",
+      "STATION_NAME":"Morgan"
     },
     {
       "LINE":"green",
       "STATION":41160,
-      "STATION_NAME":"Clinton",
+      "STATION_NAME":"Clinton"
     },
     {
       "LINE":"green",
       "STATION":40380,
-      "STATION_NAME":"Clark/Lake",
+      "STATION_NAME":"Clark/Lake"
     },
     {
       "LINE":"green",
       "STATION":40260,
-      "STATION_NAME":"State/Lake",
+      "STATION_NAME":"State/Lake"
     },
     {
       "LINE":"green",
       "STATION":40200,
-      "STATION_NAME":"Randolph/Wabash",
+      "STATION_NAME":"Randolph/Wabash"
     },
     {
       "LINE":"green",
       "STATION":40640,
-      "STATION_NAME":"Madison/Wabash",
+      "STATION_NAME":"Madison/Wabash"
     },
     {
       "LINE":"green",
       "STATION":40680,
-      "STATION_NAME":"Adams/Wabash",
+      "STATION_NAME":"Adams/Wabash"
     },
     {
       "LINE":"green",
       "STATION":,
-      "STATION_NAME":"Roosevelt",
+      "STATION_NAME":"Roosevelt"
     },
     {
       "LINE":"green",
       "STATION":41400,
-      "STATION_NAME":"35th-Bronzeville-IIT",
+      "STATION_NAME":"35th-Bronzeville-IIT"
     },
     {
       "LINE":"green",
       "STATION":40300,
-      "STATION_NAME":"Indiana",
+      "STATION_NAME":"Indiana"
     },
     {
       "LINE":"green",
       "STATION":41270,
-      "STATION_NAME":"43rd",
+      "STATION_NAME":"43rd"
     },
     {
       "LINE":"green",
       "STATION":41080,
-      "STATION_NAME":"47th",
+      "STATION_NAME":"47th"
     },
     {
       "LINE":"green",
       "STATION":40130,
-      "STATION_NAME":"51st",
+      "STATION_NAME":"51st"
     },
     {
       "LINE":"green",
       "STATION":40510,
-      "STATION_NAME":"Garfield",
+      "STATION_NAME":"Garfield"
     },
     {
       "LINE":"green",
       "STATION":41140,
-      "STATION_NAME":"King Drive",
+      "STATION_NAME":"King Drive"
     },
     {
       "LINE":"green",
       "STATION":40720,
-      "STATION_NAME":"Cottage Grove",
+      "STATION_NAME":"Cottage Grove"
     },
     {
       "LINE":"green",
       "STATION":40940,
-      "STATION_NAME":"Halsted",
+      "STATION_NAME":"Halsted"
     },
     {
       "LINE":"green",
       "STATION":40290,
-      "STATION_NAME":"Ashland/63rd",
+      "STATION_NAME":"Ashland/63rd"
     }
   ]
 }
