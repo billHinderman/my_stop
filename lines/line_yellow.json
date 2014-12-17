@@ -2,8 +2,18 @@
   "stops": [
     {
       "LINE":"yellow",
-      "STATION":,
-      "STATION_NAME":"Red",
+      "STATION":40140,
+      "STATION_NAME":"Dempster-Skokie"
     },
+    {
+      "LINE":"yellow",
+      "STATION":41680,
+      "STATION_NAME":"Oakton-Skokie"
+    },
+    {
+      "LINE":"yellow",
+      "STATION":40900,
+      "STATION_NAME":"Howard"
+    }
   ]
 }
