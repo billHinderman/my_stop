@@ -2,132 +2,132 @@
   "stops": [
     {
       "LINE":"purple",
-      "STATION":,
+      "STATION":41050,
       "STATION_NAME":"Linden"
     },
     {
       "LINE":"purple",
-      "STATION":,
+      "STATION":41250,
       "STATION_NAME":"Central"
     },
     {
       "LINE":"purple",
-      "STATION":,
+      "STATION":40400,
       "STATION_NAME":"Noyes"
     },
     {
       "LINE":"purple",
-      "STATION":,
+      "STATION":40520,
       "STATION_NAME":"Foster"
     },
     {
       "LINE":"purple",
-      "STATION":,
+      "STATION":40050,
       "STATION_NAME":"Davis"
     },
     {
       "LINE":"purple",
-      "STATION":,
+      "STATION":40690,
       "STATION_NAME":"Dempster"
     },
     {
       "LINE":"purple",
-      "STATION":,
+      "STATION":40270,
       "STATION_NAME":"Main"
     },
     {
       "LINE":"purple",
-      "STATION":,
-      "STATION_NAME":"South Blvd"
+      "STATION":40840,
+      "STATION_NAME":"South Boulevard"
     },
     {
       "LINE":"purple",
-      "STATION":,
+      "STATION":40900,
       "STATION_NAME":"Howard"
     },
     {
       "LINE":"purple",
-      "STATION":,
+      "STATION":41320,
       "STATION_NAME":"Belmont"
     },
     {
       "LINE":"purple",
-      "STATION":,
+      "STATION":41210,
       "STATION_NAME":"Wellington"
     },
     {
       "LINE":"purple",
-      "STATION":,
+      "STATION":40530,
       "STATION_NAME":"Diversey"
     },
     {
       "LINE":"purple",
-      "STATION":,
+      "STATION":41220,
       "STATION_NAME":"Fullerton"
     },
     {
       "LINE":"purple",
-      "STATION":,
+      "STATION":40660,
       "STATION_NAME":"Armitage"
     },
     {
       "LINE":"purple",
-      "STATION":,
+      "STATION":40800,
       "STATION_NAME":"Sedgwick"
     },
     {
       "LINE":"purple",
-      "STATION":,
+      "STATION":40710,
       "STATION_NAME":"Chicago"
     },
     {
       "LINE":"purple",
-      "STATION":,
+      "STATION":40460,
       "STATION_NAME":"Merchandise Mart"
     },
     {
       "LINE":"purple",
-      "STATION":,
+      "STATION":40380,
       "STATION_NAME":"Clark/Lake"
     },
     {
       "LINE":"purple",
-      "STATION":,
+      "STATION":40260,
       "STATION_NAME":"State/Lake"
     },
     {
       "LINE":"purple",
-      "STATION":,
+      "STATION":40200,
       "STATION_NAME":"Randolph/Wabash"
     },
     {
       "LINE":"purple",
-      "STATION":,
+      "STATION":40640,
       "STATION_NAME":"Madison/Wabash"
     },
     {
       "LINE":"purple",
-      "STATION":,
+      "STATION":40680,
       "STATION_NAME":"Adams/Wabash"
     },
     {
       "LINE":"purple",
-      "STATION":,
+      "STATION":40850,
       "STATION_NAME":"Harold Washington Library"
     },
     {
       "LINE":"purple",
-      "STATION":,
+      "STATION":40160,
       "STATION_NAME":"LaSalle/Van Buren"
     },
     {
       "LINE":"purple",
-      "STATION":,
+      "STATION":40040,
       "STATION_NAME":"Quincy"
     },
     {
       "LINE":"purple",
-      "STATION":,
+      "STATION":40730,
       "STATION_NAME":"Washington/Wells"
     }
   ]
