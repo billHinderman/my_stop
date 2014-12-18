@@ -3,7 +3,12 @@
     {
       "LINE":"red",
       "STATION":,
-      "STATION_NAME":"Red",
+      "STATION_NAME":""
     },
+    {
+      "LINE":"red",
+      "STATION":,
+      "STATION_NAME":""
+    }
   ]
 }
