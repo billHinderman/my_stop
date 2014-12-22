@@ -62,6 +62,10 @@ define([
     var navView = new NavView();
     navView.render();
     var footerView = new FooterView();
+    $(window).on('resize', function() {
+      $('[data-fill]').css({'height':($(window).height())});
+    });
+    $(window).resize();
 
     Backbone.history.start();
   };

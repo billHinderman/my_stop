@@ -484,6 +484,16 @@ submit.disabled, submit:disabled,
   min-height: 320px;
   width: 100%; }
 
+#etas-content,
+#stops-content {
+  float: left;
+  padding: 2em 0;
+  position: relative;
+  overflow: scroll;
+  max-width: 1280px;
+  min-height: 320px;
+  width: 50%; }
+
 .station-header {
   background: #00a1de;
   padding: 2em 1em;

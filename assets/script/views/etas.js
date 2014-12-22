@@ -9,7 +9,7 @@ define([
 ], function($, _, Backbone, EtasModel, EtasCollection, EtaView, etasTemplate){
 
   var EtasView = Backbone.View.extend({
-    el: $("#content"),
+    el: $("#etas-content"),
 
     initialize: function() {
       EtasCollection = this.options.collection;

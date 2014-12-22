@@ -9,7 +9,7 @@ define([
 ], function($, _, Backbone, StopModel, StopsCollection, StopView, stopsTemplate){
 
   var StopsView = Backbone.View.extend({
-    el: $("#content"),
+    el: $("#stops-content"),
 
     initialize: function() {
       StopsCollection = this.options.collection;
@@ -21,6 +21,7 @@ define([
 
     render: function() {
       this.$el.html(stopsTemplate); 
+      $('#etas-content').empty();
     },
 
     addOneStop: function(stop) {

@@ -38,7 +38,7 @@ define([
     },
 
     toggleNav: function() {
-      $('body').toggleClass('menu-open');
+      
     },
   });
 
