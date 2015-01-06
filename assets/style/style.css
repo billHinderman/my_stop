@@ -619,8 +619,8 @@ body.menu-open #container {
     height: 12.5vh;
     width: 100%; }
   .list-routes .route {
+    background: #fdfdfd;
     box-shadow: 0 0 3px -1px #231f20;
-    color: #fdfdfd;
     display: table-cell;
     font-weight: bold;
     vertical-align: middle;
@@ -633,21 +633,21 @@ body.menu-open #container {
       font-weight: 100;
       text-transform: uppercase; }
   .list-routes .route-blue {
-    background: #2962ff; }
+    color: #2962ff; }
   .list-routes .route-brown {
-    background: #5d4037; }
+    color: #5d4037; }
   .list-routes .route-green {
-    background: #388e3c; }
+    color: #388e3c; }
   .list-routes .route-orange {
-    background: #ff6d00; }
+    color: #ff6d00; }
   .list-routes .route-pink {
-    background: #c51162; }
+    color: #c51162; }
   .list-routes .route-purple {
-    background: #7b1fa2; }
+    color: #7b1fa2; }
   .list-routes .route-red {
-    background: #d50000; }
+    color: #d50000; }
   .list-routes .route-yellow {
-    background: #fbc02d; }
+    color: #fbc02d; }
 
 .eta.route-1 + .eta.route-5,
 .eta.route-5 + .eta.route-1 {

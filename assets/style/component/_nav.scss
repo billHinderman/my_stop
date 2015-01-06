@@ -22,8 +22,8 @@ body.menu-open #container {
     width: 100%;
   }
  .route {
+  background: $white;
   box-shadow: 0 0 3px -1px $black;
-  color: $white;
   display: table-cell;
   font-weight: bold;
   vertical-align: middle;
@@ -38,27 +38,27 @@ body.menu-open #container {
   }
  }
  .route-blue {
-  background: $dark_blue;
+  color: $dark_blue;
  }
  .route-brown {
-  background: $dark_brown;
+  color: $dark_brown;
  }
  .route-green {
-  background: $dark_green;
+  color: $dark_green;
  }
  .route-orange {
-  background: $dark_orange;
+  color: $dark_orange;
  }
  .route-pink {
-  background: $dark_pink;
+  color: $dark_pink;
  }
  .route-purple {
-  background: $dark_purple;
+  color: $dark_purple;
  }
  .route-red {
-  background: $dark_red;
+  color: $dark_red;
  }
  .route-yellow {
-  background: $dark_yellow;
+  color: $dark_yellow;
  }
 }
