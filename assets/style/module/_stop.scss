@@ -3,13 +3,8 @@
 }
 
 .card {
-  //background: rgba($white,.125);
-  color: $white;
   display: block;
-  padding: 1em;
-  margin: 0 auto;
+  margin: 1em;
+  padding: 0 .5em;
   list-style-type: none;
-  @media screen and (min-width: $large) {
-    font-size: 2em;
-  }
 }

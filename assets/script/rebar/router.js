@@ -24,9 +24,10 @@ define([
     app_router = new AppRouter;
 
     app_router.on('route:showRoutes', function (LINE) {    
+        $('body').removeClass('show-etas');
         $("body").removeClass (function (index, css) {
           return (css.match (/\bline-\S+/g) || []).join(' ');
-        }).addClass('line-'+LINE);
+        }).addClass('show-stops line-'+LINE);
 
         var lineUrl = './lines/line_'+LINE+'.json';
         var stopsCollection = new StopsCollection([],{apiUrl: lineUrl});
@@ -39,13 +40,21 @@ define([
     app_router.on('route:renderAll', function () {  
       $("body").removeClass (function (index, css) {
           return (css.match (/\bline-\S+/g) || []).join(' ');
-        });  
+        });
+      $('body').removeClass('show-stops show-etas');
     });
 
-    app_router.on('route:showEtas', function (LINE,PARENT_STOP_ID) {    
+    app_router.on('route:showEtas', function (LINE,PARENT_STOP_ID) {   
+      $('body').removeClass('show-stops'); 
       $("body").removeClass (function (index, css) {
           return (css.match (/\bline-\S+/g) || []).join(' ');
-        }).addClass('line-'+LINE);
+        }).addClass('show-etas line-'+LINE);
+
+      var lineUrl = './lines/line_'+LINE+'.json';
+      var stopsCollection = new StopsCollection([],{apiUrl: lineUrl});
+      stopsCollection.fetch();
+      var stopsView = new StopsView({collection: stopsCollection});
+      stopsView.render();
 
       var ctaUrl = 'http://cta.billhinderman.com/assets/script/rebar/proxy.php?stop='+PARENT_STOP_ID+'&rt='+LINE;
       var etasCollection = new EtasCollection([],{apiUrl: ctaUrl});
@@ -54,10 +63,6 @@ define([
       view.render();
     });
 
-    // Unlike the above, we don't call render on this view as it will handle
-    // the render call internally after it loads data. Further more we load it
-    // outside of an on-route function to have it loaded no matter which page is
-    // loaded initially.
     var headerView = new HeaderView();
     var navView = new NavView();
     navView.render();

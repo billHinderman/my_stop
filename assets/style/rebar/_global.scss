@@ -12,38 +12,77 @@ Main
 }
 body {
   background: $black;
-  color: $black;
   overflow-x: hidden;
   width: 100%;
 }
 #container {
   background: $white;
-  @include transition(margin-left .5s);
+  @include transition(margin-left .4s);
 }
-.line-blue #container {
-  background: linear-gradient(to left, $blue 66%, $dark_blue);
+#stops-content,
+#etas-content {
+  @include transition(background .4s);
 }
-.line-brown #container {
-  background: linear-gradient(to left, $brown 66%, $dark_brown);
+.line-blue #stops-content {
+  background: $dark_blue;
 }
-.line-green #container {
-  background: linear-gradient(to left, $green 66%, $dark_green);
+.line-brown #stops-content {
+  background: $dark_brown;
 }
-.line-orange #container {
-  background: linear-gradient(to left, $orange 66%, $dark_orange);
+.line-green #stops-content {
+  background: $dark_green;
 }
-.line-pink #container {
-  background: linear-gradient(to left, $pink 66%, $dark_pink);
+.line-orange #stops-content {
+  background: $dark_orange;
 }
-.line-purple #container {
-  background: linear-gradient(to left, $purple 66%, $dark_purple);
+.line-pink #stops-content {
+  background: $dark_pink;
 }
-.line-red #container {
-  background: linear-gradient(to left, $red 66%, $dark_red);
+.line-purple #stops-content {
+  background: $dark_purple;
 }
-.line-yellow #container {
-  background: linear-gradient(to left, $yellow 66%, $dark_yellow);
+.line-red #stops-content {
+  background: $dark_red;
 }
+.line-yellow #stops-content {
+  background: $dark_yellow;
+  color: $black;
+  a {
+    color: $black;
+  }
+}
+#etas-content {
+  box-shadow: 3px 0px 3px -3px $black inset;
+}
+.line-blue #etas-content {
+  background: $blue;
+}
+.line-brown #etas-content {
+  background: $brown;
+}
+.line-green #etas-content {
+  background: $green;
+}
+.line-orange #etas-content {
+  background: $orange;
+}
+.line-pink #etas-content {
+  background: $pink;
+}
+.line-purple #etas-content {
+  background: $purple;
+}
+.line-red #etas-content {
+  background: $red;
+}
+.line-yellow #etas-content {
+  background: $yellow;
+  color: $black;
+  a {
+    color: $black;
+  }
+}
+
 ::selection {
   background: $black;
   color: $white;

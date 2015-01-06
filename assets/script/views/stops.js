@@ -30,6 +30,7 @@ define([
     },
 
     addAllStops: function() {
+      this.$("#stops-spinner").remove();
       StopsCollection.each(this.addOneStop);
     },
   });

@@ -1,10 +1,11 @@
 #content {
-  margin: 0 auto;
-  padding: 2em 0;
+  margin: 0;
+  padding: 0;
   position: relative;
-  max-width: $xl;
+  margin-left: 0;
   min-height: 320px;
-  width: 100%;
+  @include transition(all .4s);
+  width: 200%;
 }
 #etas-content,
 #stops-content {
@@ -12,7 +13,50 @@
   padding: 2em 0;
   position: relative;
   overflow: scroll;
-  max-width: $xl;
   min-height: 320px;
   width: 50%;
+}
+
+
+.show-etas #content {
+  margin-left: -100%;
+  @media screen and (min-width: $large) {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+$offset: 187;
+$duration: 1.4s;
+
+.spinner {
+  display: block;
+  margin: auto;
+  -webkit-animation: rotator $duration linear infinite;
+}
+
+@-webkit-keyframes rotator {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(270deg); }
+}
+
+.path {
+  stroke: $white;
+  stroke-dasharray: $offset;
+  stroke-dashoffset: 0;
+  transform-origin: center;
+  -webkit-animation:
+    dash $duration ease-in-out infinite;
+}
+
+@-webkit-keyframes dash {
+ 0% { stroke-dashoffset: $offset; }
+ 50% {
+   stroke-dashoffset: $offset/4;
+   transform:rotate(135deg);
+ }
+ 100% {
+   stroke-dashoffset: $offset;
+   transform:rotate(450deg);
+ }
 }

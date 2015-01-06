@@ -21,7 +21,7 @@ define([
 
     render: function() {
       this.$el.html(etasTemplate);
-      this.$("#etas-info").append('');
+      this.$('#etas-info').append('');
     },
 
     addOneEta: function(eta) {
@@ -30,6 +30,7 @@ define([
     },
 
     addAllEtas: function() {
+      this.$("#etas-spinner").remove();
       EtasCollection.each(this.addOneEta);
     },
   });

@@ -10,6 +10,7 @@ body.menu-open #container {
   position: fixed;
   @include transition(margin-left .5s);
   width: 320px;
+  z-index: 1;
 }
 .list-routes {
   list-style-type: none;
@@ -17,12 +18,8 @@ body.menu-open #container {
   li {
     display: table;
     float: left;
-    height: 25vh;
-    width: 50%;
-    @media screen and (min-width: $m-l) {
-      height: 2.5vh;
-      width: 100%;
-    }
+    height: 12.5vh;
+    width: 100%;
   }
  .route {
   box-shadow: 0 0 3px -1px $black;
@@ -41,27 +38,27 @@ body.menu-open #container {
   }
  }
  .route-blue {
-  background: linear-gradient(to right, $blue 66%, $dark_blue);
+  background: $dark_blue;
  }
  .route-brown {
-  background: linear-gradient(to right, $brown 66%, $dark_brown);
+  background: $dark_brown;
  }
  .route-green {
-  background: linear-gradient(to right, $green 66%, $dark_green);
+  background: $dark_green;
  }
  .route-orange {
-  background: linear-gradient(to right, $orange 66%, $dark_orange);
+  background: $dark_orange;
  }
  .route-pink {
-  background: linear-gradient(to right, $pink 66%, $dark_pink);
+  background: $dark_pink;
  }
  .route-purple {
-  background: linear-gradient(to right, $purple 66%, $dark_purple);
+  background: $dark_purple;
  }
  .route-red {
-  background: linear-gradient(to right, $red 66%, $dark_red);
+  background: $dark_red;
  }
  .route-yellow {
-  background: linear-gradient(to right, $yellow 66%, $dark_yellow);
+  background: $dark_yellow;
  }
 }

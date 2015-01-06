@@ -68,41 +68,81 @@ Main
 
 body {
   background: #231f20;
-  color: #231f20;
   overflow-x: hidden;
   width: 100%; }
 
 #container {
   background: #fdfdfd;
-  -webkit-transition: margin-left 0.5s;
-  -moz-transition: margin-left 0.5s;
-  -ms-transition: margin-left 0.5s;
-  -o-transition: margin-left 0.5s;
-  transition: margin-left 0.5s; }
+  -webkit-transition: margin-left 0.4s;
+  -moz-transition: margin-left 0.4s;
+  -ms-transition: margin-left 0.4s;
+  -o-transition: margin-left 0.4s;
+  transition: margin-left 0.4s; }
 
-.line-blue #container {
-  background: linear-gradient(to left, #2196f3 66%, #2962ff); }
+#stops-content,
+#etas-content {
+  -webkit-transition: background 0.4s;
+  -moz-transition: background 0.4s;
+  -ms-transition: background 0.4s;
+  -o-transition: background 0.4s;
+  transition: background 0.4s; }
 
-.line-brown #container {
-  background: linear-gradient(to left, #795548 66%, #5d4037); }
+.line-blue #stops-content {
+  background: #2962ff; }
 
-.line-green #container {
-  background: linear-gradient(to left, #4caf50 66%, #388e3c); }
+.line-brown #stops-content {
+  background: #5d4037; }
 
-.line-orange #container {
-  background: linear-gradient(to left, #ff9800 66%, #ff6d00); }
+.line-green #stops-content {
+  background: #388e3c; }
 
-.line-pink #container {
-  background: linear-gradient(to left, #e91e63 66%, #c51162); }
+.line-orange #stops-content {
+  background: #ff6d00; }
 
-.line-purple #container {
-  background: linear-gradient(to left, #9c27b0 66%, #7b1fa2); }
+.line-pink #stops-content {
+  background: #c51162; }
 
-.line-red #container {
-  background: linear-gradient(to left, #f44336 66%, #d50000); }
+.line-purple #stops-content {
+  background: #7b1fa2; }
 
-.line-yellow #container {
-  background: linear-gradient(to left, #ffeb3b 66%, #fbc02d); }
+.line-red #stops-content {
+  background: #d50000; }
+
+.line-yellow #stops-content {
+  background: #fbc02d;
+  color: #231f20; }
+  .line-yellow #stops-content a {
+    color: #231f20; }
+
+#etas-content {
+  box-shadow: 3px 0px 3px -3px #231f20 inset; }
+
+.line-blue #etas-content {
+  background: #2196f3; }
+
+.line-brown #etas-content {
+  background: #795548; }
+
+.line-green #etas-content {
+  background: #4caf50; }
+
+.line-orange #etas-content {
+  background: #ff9800; }
+
+.line-pink #etas-content {
+  background: #e91e63; }
+
+.line-purple #etas-content {
+  background: #9c27b0; }
+
+.line-red #etas-content {
+  background: #f44336; }
+
+.line-yellow #etas-content {
+  background: #ffeb3b;
+  color: #231f20; }
+  .line-yellow #etas-content a {
+    color: #231f20; }
 
 ::selection {
   background: #231f20;
@@ -197,7 +237,7 @@ TYPOGRAPHY
 Default
 ******************************/
 body {
-  color: #231f20;
+  color: #fdfdfd;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em;
   text-rendering: optimizelegibility;
@@ -477,12 +517,17 @@ submit.disabled, submit:disabled,
     left: .5em; }
 
 #content {
-  margin: 0 auto;
-  padding: 2em 0;
+  margin: 0;
+  padding: 0;
   position: relative;
-  max-width: 1280px;
+  margin-left: 0;
   min-height: 320px;
-  width: 100%; }
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  width: 200%; }
 
 #etas-content,
 #stops-content {
@@ -490,9 +535,46 @@ submit.disabled, submit:disabled,
   padding: 2em 0;
   position: relative;
   overflow: scroll;
-  max-width: 1280px;
   min-height: 320px;
   width: 50%; }
+
+.show-etas #content {
+  margin-left: -100%; }
+  @media screen and (min-width: 1024px) {
+    .show-etas #content {
+      margin-left: 0;
+      width: 100%; } }
+
+.spinner {
+  display: block;
+  margin: auto;
+  -webkit-animation: rotator 1.4s linear infinite; }
+
+@-webkit-keyframes rotator {
+  0% {
+    transform: rotate(0deg); }
+
+  100% {
+    transform: rotate(270deg); } }
+
+.path {
+  stroke: #fdfdfd;
+  stroke-dasharray: 187;
+  stroke-dashoffset: 0;
+  transform-origin: center;
+  -webkit-animation: dash 1.4s ease-in-out infinite; }
+
+@-webkit-keyframes dash {
+  0% {
+    stroke-dashoffset: 187; }
+
+  50% {
+    stroke-dashoffset: 46.75;
+    transform: rotate(135deg); }
+
+  100% {
+    stroke-dashoffset: 187;
+    transform: rotate(450deg); } }
 
 .station-header {
   background: #00a1de;
@@ -525,7 +607,8 @@ body.menu-open #container {
   -ms-transition: margin-left 0.5s;
   -o-transition: margin-left 0.5s;
   transition: margin-left 0.5s;
-  width: 320px; }
+  width: 320px;
+  z-index: 1; }
 
 .list-routes {
   list-style-type: none;
@@ -533,12 +616,8 @@ body.menu-open #container {
   .list-routes li {
     display: table;
     float: left;
-    height: 25vh;
-    width: 50%; }
-    @media screen and (min-width: 960px) {
-      .list-routes li {
-        height: 2.5vh;
-        width: 100%; } }
+    height: 12.5vh;
+    width: 100%; }
   .list-routes .route {
     box-shadow: 0 0 3px -1px #231f20;
     color: #fdfdfd;
@@ -554,21 +633,21 @@ body.menu-open #container {
       font-weight: 100;
       text-transform: uppercase; }
   .list-routes .route-blue {
-    background: linear-gradient(to right, #2196f3 66%, #2962ff); }
+    background: #2962ff; }
   .list-routes .route-brown {
-    background: linear-gradient(to right, #795548 66%, #5d4037); }
+    background: #5d4037; }
   .list-routes .route-green {
-    background: linear-gradient(to right, #4caf50 66%, #388e3c); }
+    background: #388e3c; }
   .list-routes .route-orange {
-    background: linear-gradient(to right, #ff9800 66%, #ff6d00); }
+    background: #ff6d00; }
   .list-routes .route-pink {
-    background: linear-gradient(to right, #e91e63 66%, #c51162); }
+    background: #c51162; }
   .list-routes .route-purple {
-    background: linear-gradient(to right, #9c27b0 66%, #7b1fa2); }
+    background: #7b1fa2; }
   .list-routes .route-red {
-    background: linear-gradient(to right, #f44336 66%, #d50000); }
+    background: #d50000; }
   .list-routes .route-yellow {
-    background: linear-gradient(to right, #ffeb3b 66%, #fbc02d); }
+    background: #fbc02d; }
 
 .eta.route-1 + .eta.route-5,
 .eta.route-5 + .eta.route-1 {
@@ -595,11 +674,7 @@ body.menu-open #container {
   list-style-type: none; }
 
 .card {
-  color: #fdfdfd;
   display: block;
-  padding: 1em;
-  margin: 0 auto;
+  margin: 1em;
+  padding: 0 .5em;
   list-style-type: none; }
-  @media screen and (min-width: 1024px) {
-    .card {
-      font-size: 2em; } }
