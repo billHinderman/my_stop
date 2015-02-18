@@ -12,7 +12,7 @@ define([
     el: $("#navigation"),
 
     events: {
-      'click' : 'toggleNav',
+      'click .nav-toggle' : 'toggleNav',
     },
 
     initialize: function() {
@@ -37,8 +37,9 @@ define([
       RoutesCollection.each(this.addOne);
     },
 
-    toggleNav: function() {
-      
+    toggleNav: function(event) {
+      event.preventDefault();
+      $('body').toggleClass('menu-open');
     },
   });
 

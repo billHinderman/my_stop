@@ -1,8 +1,63 @@
+.show-etas #etas-content {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  z-index: 1;
+}
+
+.menu-open #etas-content {
+  z-index: 0;
+}
+
+#etas-content {
+  background: $white;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  opacity: 0;
+  margin: 1em auto;
+  position: fixed;
+  min-height: 288px;
+  overflow-y: auto;
+  min-width: 304px;
+  max-width: 768px;
+  top: 0;
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 100%;
+  z-index: -1;
+}
+#etas-list {
+  padding: 5em 1em 2em;
+  list-style-type: none;
+}
+.eta {
+  margin-bottom: 1em;
+}
+#etas-spinner {
+ margin-top: 80px; 
+}
 .eta.route-1 + .eta.route-5,
 .eta.route-5 + .eta.route-1 {
   border-top: .125em solid;
   margin-top: 1em;
   padding-top: 1em;
+}
+#etas-content #etas-nav {
+  font-size: 2em;
+  padding: .25em;
+  position: absolute;
+  text-align: right;
+  top: 0;
+  width: 100%;
+}
+#etas-content h3 {
+  font-weight: bold;
 }
 .destination {
   float: left;

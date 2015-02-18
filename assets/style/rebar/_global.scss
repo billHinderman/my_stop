@@ -11,75 +11,108 @@ Main
   box-sizing: border-box;
 }
 body {
-  background: $black;
-  overflow-x: hidden;
-  width: 100%;
+  background: $white;
+  font-family: $sans;
 }
 #container {
-  background: $white;
-  @include transition(margin-left .4s);
 }
 #stops-content,
 #etas-content {
-  @include transition(background .4s);
 }
-.line-blue #stops-content {
-  background: $dark_blue;
-}
-.line-brown #stops-content {
-  background: $dark_brown;
-}
-.line-green #stops-content {
-  background: $dark_green;
-}
-.line-orange #stops-content {
-  background: $dark_orange;
-}
-.line-pink #stops-content {
-  background: $dark_pink;
-}
-.line-purple #stops-content {
-  background: $dark_purple;
-}
-.line-red #stops-content {
-  background: $dark_red;
-}
-.line-yellow #stops-content {
-  background: $dark_yellow;
-  color: $black;
-  a {
-    color: $black;
-  }
-}
-#etas-content {
-  box-shadow: 3px 0px 3px -3px $black inset;
-}
-.line-blue #etas-content {
+.line-blue #container {
   background: $blue;
 }
-.line-brown #etas-content {
+.line-brown #container {
   background: $brown;
 }
-.line-green #etas-content {
+.line-green #container {
   background: $green;
 }
-.line-orange #etas-content {
+.line-orange #container {
   background: $orange;
 }
-.line-pink #etas-content {
+.line-pink #container {
   background: $pink;
 }
-.line-purple #etas-content {
+.line-purple #container {
   background: $purple;
 }
-.line-red #etas-content {
+.line-red #container {
   background: $red;
 }
-.line-yellow #etas-content {
+.line-yellow #container {
   background: $yellow;
-  color: $black;
-  a {
-    color: $black;
+}
+.line-blue #etas-content {
+  color: $dark_blue;
+  .path {
+    stroke: $dark_blue
+  }
+  #etas-nav {
+    background: $dark_blue;
+  }
+}
+.line-brown #etas-content {
+  color: $dark_brown;
+  .path {
+    stroke: $dark_brown;
+  }
+  #etas-nav {
+    background: $dark_brown;
+  }
+}
+.line-green #etas-content {
+  color: $dark_green;
+  .path {
+    stroke: $dark_green;
+  }
+  #etas-nav {
+    background: $dark_green;
+  }
+}
+.line-orange #etas-content {
+  color: $dark_orange;
+  .path {
+    stroke: $dark_orange;
+  }
+  #etas-nav {
+    background: $dark_orange;
+  }
+}
+.line-pink #etas-content {
+  color: $dark_pink;
+  .path {
+    stroke: $dark_pink;
+  }
+  #etas-nav {
+    background: $dark_pink;
+  }
+}
+.line-purple #etas-content {
+  color: $dark_purple;
+  .path {
+    stroke: $dark_purple;
+  }
+  #etas-nav {
+    background: $dark_purple;
+  }
+}
+.line-red #etas-content {
+  color: $dark_red;
+  .path {
+    stroke: $dark_red;
+  }
+  #etas-nav {
+    background: $dark_red;
+  }
+}
+.line-yellow #etas-content {
+  color: $dark_yellow;
+  .path {
+    stroke: $dark_yellow;
+  }
+  #etas-nav {
+    background: $dark_yellow;
   }
 }
 
@@ -90,78 +123,6 @@ body {
 ::-moz-selection {
   background: $black;
   color: $white;
-}
-
-/******************************
-Align
-******************************/
-.align-left {
-  text-align: left;
-}
-.align-center {
-  text-align: center;
-}
-.align-right {
-  text-align: right;
-}
-
-/******************************
-Display
-******************************/
-.display-block {
-  display: block;
-}
-.display-inline {
-  display: inline;
-}
-.display-inline-block {
-  display: -moz-inline-stack;
-  display: inline-block;
-  vertical-align: top;
-  zoom: 1;
-  *display: inline;
-}
-.display-none {
-  display: none;
-}
-.display-table {
-  display: table;
-}
-
-/******************************
-Hide
-******************************/
-.hide-small-up {
-  @media screen and (min-width: $small) {
-    display: none !important;
-  }
-}
-.hide-medium-up {
-  @media screen and (min-width: $medium) {
-    display: none !important;
-  }
-}
-
-.hide-large-up {
-  @media screen and (min-width: $large) {
-    display: none !important;
-  }
-}
-
-.hide-small-down {
-  @media screen and (max-width: $small) {
-    display: none !important;
-  }
-}
-.hide-medium-down {
-  @media screen and (max-width: $medium) {
-    display: none !important;
-  }
-}
-.hide-large-down {
-  @media screen and (max-width: $large) {
-    display: none !important;
-  }
 }
 
 /******************************

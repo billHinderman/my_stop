@@ -1,31 +1,23 @@
+.menu-open #content {
+  -moz-filter: blur(2px);
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+}
+
 #content {
-  margin: 0;
   padding: 0;
   position: relative;
-  margin-left: 0;
+  max-width: 768px;
+  margin: auto;
   min-height: 320px;
-  @include transition(all .4s);
-  width: 200%;
-}
-#etas-content,
-#stops-content {
-  float: left;
-  padding: 2em 0;
-  position: relative;
-  overflow: scroll;
-  min-height: 320px;
-  width: 50%;
-}
-
-
-.show-etas #content {
-  margin-left: -100%;
-  @media screen and (min-width: $large) {
-    margin-left: 0;
-    width: 100%;
+  a {
+    color: $white;
   }
 }
-
+#stops-content {
+  padding: 4em 0 2em;
+  min-height: 320px;
+}
 $offset: 187;
 $duration: 1.4s;
 

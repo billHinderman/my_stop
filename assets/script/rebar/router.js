@@ -7,12 +7,14 @@ define([
   'assets/script/views/component/header.js',
   'assets/script/views/component/nav.js',
   'assets/script/views/component/footer.js',
-'assets/script/views/stops.js',
-'assets/script/views/etas.js',
-], function($, _, Backbone, StopsCollection, EtasCollection, HeaderView, NavView, FooterView, StopsView, EtasView) {
+  'assets/script/views/home.js',
+  'assets/script/views/stops.js',
+  'assets/script/views/etas.js',
+], function($, _, Backbone, StopsCollection, EtasCollection, HeaderView, NavView, FooterView, HomeView, StopsView, EtasView) {
   
   var AppRouter = Backbone.Router.extend({
     routes: {
+      '':'showHome',
       ':LINE': 'showRoutes',
       ':LINE/:PARENT_STOP_ID': 'showEtas',
       'default': 'renderAll'
@@ -22,6 +24,13 @@ define([
   var initialize = function(){
 
     app_router = new AppRouter;
+
+    app_router.on('route:renderAll', function () {  
+      $("body").removeClass (function (index, css) {
+          return (css.match (/\bline-\S+/g) || []).join(' ');
+        });
+      $('body').removeClass('show-stops show-etas');
+    });
 
     app_router.on('route:showRoutes', function (LINE) {    
         $('body').removeClass('show-etas');
@@ -37,12 +46,17 @@ define([
 
     });
 
-    app_router.on('route:renderAll', function () {  
+    app_router.on('route:showHome', function () {    
       $("body").removeClass (function (index, css) {
-          return (css.match (/\bline-\S+/g) || []).join(' ');
-        });
+        return (css.match (/\bline-\S+/g) || []).join(' ');
+      });
       $('body').removeClass('show-stops show-etas');
+      $('body').addClass('menu-open');
+
+      var homeView = new HomeView();
     });
+
+    
 
     app_router.on('route:showEtas', function (LINE,PARENT_STOP_ID) {   
       $('body').removeClass('show-stops'); 
@@ -57,9 +71,10 @@ define([
       stopsView.render();
 
       var ctaUrl = 'http://cta.billhinderman.com/assets/script/rebar/proxy.php?stop='+PARENT_STOP_ID+'&rt='+LINE;
+      var closeUrl = '#/'+LINE;
       var etasCollection = new EtasCollection([],{apiUrl: ctaUrl});
       etasCollection.fetch();
-      var view = new EtasView({collection: etasCollection});
+      var view = new EtasView({collection: etasCollection, close:closeUrl});
       view.render();
     });
 
@@ -68,7 +83,7 @@ define([
     navView.render();
     var footerView = new FooterView();
     $(window).on('resize', function() {
-      $('[data-fill]').css({'height':($(window).height())});
+      $('[data-fill]').css({'min-height':($(window).height())});
     });
     $(window).resize();
 

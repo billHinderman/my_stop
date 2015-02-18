@@ -6,13 +6,12 @@ Base
 ******************************/
 a, .link,
 a:visited, .link:visited {
-  color: $white;
+  
   text-decoration: none;
   @include transition(all $transition-static);
   &:active,
   &:hover {
-    border-color: inherit;
-    color: inherit;
+    
   }
 
   &[rel^="external"],

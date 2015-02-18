@@ -22,6 +22,7 @@ define([
     render: function() {
       this.$el.html(stopsTemplate); 
       $('#etas-content').empty();
+      $('body').removeClass('menu-open');
     },
 
     addOneStop: function(stop) {

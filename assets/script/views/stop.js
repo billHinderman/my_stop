@@ -9,7 +9,7 @@ define([
     var StopView = Backbone.View.extend({
     //... is a list tag.
     tagName:  "li",
-    className: 'stop card float-clear',
+    className: 'stop card',
 
     // Cache the template function for a single item.
     template: _.template(stopTemplate),

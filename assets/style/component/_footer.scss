@@ -1,4 +1,15 @@
 #footer {
   background: $black;
   color: $white;
+  font-size: .8em;
+  font-weight: lighter;
+  line-height: 1.25em;
+  padding: 2.5em 1em;
+  text-align: center;
+  a {
+    color: $sbg_yellow;
+  }
+  .disclaimer {
+    padding-bottom: 1em;
+  }
 }

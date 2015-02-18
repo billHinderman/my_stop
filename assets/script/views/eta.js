@@ -7,7 +7,7 @@ define([
     var EtaView = Backbone.View.extend({
     //... is a list tag.
     tagName:  'li',
-    className: 'eta card float-clear',
+    className: 'eta float-clear',
 
     // Cache the template function for a single item.
     template: _.template(etaTemplate),
@@ -22,6 +22,8 @@ define([
     render: function(){
       $(this.el).html(this.template(this.model.toJSON()));
       $(this.el).addClass('route-'+this.model.get('trDr'));
+      $(this.el).attr('itemscope','');
+      $(this.el).attr('itemtype','http://schema.org/TrainTrip');
       return this;
     },
   });
