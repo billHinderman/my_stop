@@ -48,6 +48,8 @@ define([
 
     refreshEtas: function(e) {
       e.preventDefault();
+      this.$('#etas-list').empty();
+      EtasCollection.fetch();
     },
   });
 

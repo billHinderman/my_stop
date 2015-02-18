@@ -28,27 +28,28 @@ $duration: 1.4s;
 }
 
 @-webkit-keyframes rotator {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(270deg); }
+  0% { @include transform(rotate(0deg)); }
+  100% { @include transform(rotate(270deg)); }
 }
 
 .path {
   stroke: $white;
   stroke-dasharray: $offset;
   stroke-dashoffset: 0;
+  -moz-transform-origin: center;
+  -webkit-transform-origin: center;
   transform-origin: center;
-  -webkit-animation:
-    dash $duration ease-in-out infinite;
+  -webkit-animation: dash $duration ease-in-out infinite;
 }
 
 @-webkit-keyframes dash {
  0% { stroke-dashoffset: $offset; }
  50% {
    stroke-dashoffset: $offset/4;
-   transform:rotate(135deg);
+   @include transform(rotate(135deg));
  }
  100% {
    stroke-dashoffset: $offset;
-   transform:rotate(450deg);
+   @include transform(rotate(450deg));
  }
 }

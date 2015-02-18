@@ -2717,15 +2717,25 @@ submit.disabled, submit:disabled,
 
 @-webkit-keyframes rotator {
   0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
     transform: rotate(0deg); }
 
   100% {
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
     transform: rotate(270deg); } }
 
 .path {
   stroke: #fdfdfd;
   stroke-dasharray: 187;
   stroke-dashoffset: 0;
+  -moz-transform-origin: center;
+  -webkit-transform-origin: center;
   transform-origin: center;
   -webkit-animation: dash 1.4s ease-in-out infinite; }
 
@@ -2735,10 +2745,18 @@ submit.disabled, submit:disabled,
 
   50% {
     stroke-dashoffset: 46.75;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
     transform: rotate(135deg); }
 
   100% {
     stroke-dashoffset: 187;
+    -webkit-transform: rotate(450deg);
+    -moz-transform: rotate(450deg);
+    -ms-transform: rotate(450deg);
+    -o-transform: rotate(450deg);
     transform: rotate(450deg); } }
 
 .station-header {
@@ -2887,7 +2905,7 @@ submit.disabled, submit:disabled,
   margin-bottom: 1em; }
 
 #etas-spinner {
-  margin-top: 80px; }
+  margin-top: 110px; }
 
 .eta.route-1 + .eta.route-5,
 .eta.route-5 + .eta.route-1 {
