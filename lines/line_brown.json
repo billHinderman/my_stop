@@ -4,197 +4,197 @@
       "LINE":"brown",
       "STATION":41290,
       "STATION_NAME":"Kimball",
-      "LAT":0,
-      "LON":0
+      "LON":-87.713065,
+      "LAT":41.967901
     },
     {
       "LINE":"brown",
       "STATION":41180,
       "STATION_NAME":"Kedzie",
-      "LAT":0,
-      "LON":0
+      "LON":-87.708821,
+      "LAT":41.965996
     },
     {
       "LINE":"brown",
       "STATION":40870,
       "STATION_NAME":"Francisco",
-      "LAT":0,
-      "LON":0
+      "LON":-87.701644,
+      "LAT":41.966046
     },
     {
       "LINE":"brown",
       "STATION":41010,
       "STATION_NAME":"Rockwell",
-      "LAT":0,
-      "LON":0
+      "LON":-87.6941,
+      "LAT":41.966115
     },
     {
       "LINE":"brown",
       "STATION":41480,
       "STATION_NAME":"Western",
-      "LAT":0,
-      "LON":0
+      "LON":-87.688502,
+      "LAT":41.966163
     },
     {
       "LINE":"brown",
       "STATION":40090,
       "STATION_NAME":"Damen",
-      "LAT":0,
-      "LON":0
+      "LON":-87.678639,
+      "LAT":41.966286
     },
     {
       "LINE":"brown",
       "STATION":41500,
       "STATION_NAME":"Montrose",
-      "LAT":0,
-      "LON":0
+      "LON":-87.675047,
+      "LAT":41.961756
     },
     {
       "LINE":"brown",
       "STATION":41460,
       "STATION_NAME":"Irving Park",
-      "LAT":0,
-      "LON":0
+      "LON":-87.674868,
+      "LAT":41.954521
     },
     {
       "LINE":"brown",
       "STATION":41440,
       "STATION_NAME":"Addison",
-      "LAT":0,
-      "LON":0
+      "LON":-87.674642,
+      "LAT":41.947028
     },
     {
       "LINE":"brown",
       "STATION":41310,
       "STATION_NAME":"Paulina",
-      "LAT":0,
-      "LON":0
+      "LON":-87.670907,
+      "LAT":41.943623
     },
     {
       "LINE":"brown",
       "STATION":40360,
       "STATION_NAME":"Southport",
-      "LAT":0,
-      "LON":0
+      "LON":-87.663619,
+      "LAT":41.943744
     },
     {
       "LINE":"brown",
       "STATION":41320,
       "STATION_NAME":"Belmont",
-      "LAT":0,
-      "LON":0
+      "LON":-87.65338,
+      "LAT":41.939751
     },
     {
       "LINE":"brown",
       "STATION":41210,
       "STATION_NAME":"Wellington",
-      "LAT":0,
-      "LON":0
+      "LON":-87.653266,
+      "LAT":41.936033
     },
     {
       "LINE":"brown",
       "STATION":40530,
       "STATION_NAME":"Diversey",
-      "LAT":0,
-      "LON":0
+      "LON":-87.653131,
+      "LAT":41.932732
     },
     {
       "LINE":"brown",
       "STATION":41220,
       "STATION_NAME":"Fullerton",
-      "LAT":0,
-      "LON":0
+      "LON":-87.652866,
+      "LAT":41.925051
     },
     {
       "LINE":"brown",
       "STATION":40660,
       "STATION_NAME":"Armitage",
-      "LAT":0,
-      "LON":0
+      "LON":-87.652644,
+      "LAT":41.918217
     },
     {
       "LINE":"brown",
       "STATION":40800,
       "STATION_NAME":"Sedgwick",
-      "LAT":0,
-      "LON":0
+      "LON":-87.639302,
+      "LAT":41.910409
     },
     {
       "LINE":"brown",
       "STATION":40710,
       "STATION_NAME":"Chicago",
-      "LAT":0,
-      "LON":0
+      "LON":-87.635924,
+      "LAT":41.89681
     },
     {
       "LINE":"brown",
       "STATION":40460,
       "STATION_NAME":"Merchandise Mart",
-      "LAT":0,
-      "LON":0
+      "LON":-87.633924,
+      "LAT":41.888969
     },
     {
       "LINE":"brown",
       "STATION":40730,
       "STATION_NAME":"Washington/Wells",
-      "LAT":0,
-      "LON":0
+      "LON":-87.63378,
+      "LAT":41.882695
     },
     {
       "LINE":"brown",
       "STATION":40040,
       "STATION_NAME":"Quincy",
-      "LAT":0,
-      "LON":0
+      "LON":-87.63374,
+      "LAT":41.878723
     },
     {
       "LINE":"brown",
       "STATION":40160,
       "STATION_NAME":"LaSalle/Van Buren",
-      "LAT":0,
-      "LON":0
+      "LON":-87.631739,
+      "LAT":41.8768
     },
     {
       "LINE":"brown",
       "STATION":40850,
       "STATION_NAME":"Harold Washington Library",
-      "LAT":0,
-      "LON":0
+      "LON":-87.628196,
+      "LAT":41.876862
     },
     {
       "LINE":"brown",
       "STATION":40680,
       "STATION_NAME":"Adams/Wabash",
-      "LAT":0,
-      "LON":0
+      "LON":-87.626037,
+      "LAT":41.879507
     },
     {
       "LINE":"brown",
       "STATION":40640,
       "STATION_NAME":"Madison/Wabash",
-      "LAT":0,
-      "LON":0
+      "LON":-87.626098,
+      "LAT":41.882023
     },
     {
       "LINE":"brown",
       "STATION":40200,
       "STATION_NAME":"Randolph/Wabash",
-      "LAT":0,
-      "LON":0
+      "LON":-87.626149,
+      "LAT":41.884431
     },
     {
       "LINE":"brown",
       "STATION":40260,
       "STATION_NAME":"State/Lake",
-      "LAT":0,
-      "LON":0
+      "LON":-87.627835,
+      "LAT":41.88574
     },
     {
       "LINE":"brown",
       "STATION":40380,
       "STATION_NAME":"Clark/Lake",
-      "LAT":0,
-      "LON":0
+      "LON":-87.630886,
+      "LAT":41.885737
     }
   ]
 }

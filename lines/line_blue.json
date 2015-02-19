@@ -4,232 +4,232 @@
       "LINE":"blue",
       "STATION":40890,
       "STATION_NAME":"O'Hare",
-      "LAT":0,
-      "LON":0
+      "LON":-87.90422307,
+      "LAT":41.97766526
     },
     {
       "LINE":"blue",
       "STATION":40820,
       "STATION_NAME":"Rosemont",
-      "LAT":0,
-      "LON":0
+      "LON":-87.859388,
+      "LAT":41.983507
     },
     {
       "LINE":"blue",
       "STATION":40230,
       "STATION_NAME":"Cumberland",
-      "LAT":0,
-      "LON":0
+      "LON":-87.838028,
+      "LAT":41.984246
     },
     {
       "LINE":"blue",
       "STATION":40750,
       "STATION_NAME":"Harlem",
-      "LAT":0,
-      "LON":0
+      "LON":-87.8089,
+      "LAT":41.98227
     },
     {
       "LINE":"blue",
       "STATION":41280,
       "STATION_NAME":"Jefferson Park",
-      "LAT":0,
-      "LON":0
+      "LON":-87.760892,
+      "LAT":41.970634
     },
     {
       "LINE":"blue",
       "STATION":41330,
       "STATION_NAME":"Montrose",
-      "LAT":0,
-      "LON":0
+      "LON":-87.743574,
+      "LAT":41.961539
     },
     {
       "LINE":"blue",
       "STATION":40550,
       "STATION_NAME":"Irving Park",
-      "LAT":0,
-      "LON":0
+      "LON":-87.729229,
+      "LAT":41.952925
     },
     {
       "LINE":"blue",
       "STATION":41240,
       "STATION_NAME":"Addison",
-      "LAT":0,
-      "LON":0
+      "LON":-87.71906,
+      "LAT":41.94738
     },
     {
       "LINE":"blue",
       "STATION":40060,
       "STATION_NAME":"Belmont",
-      "LAT":0,
-      "LON":0
+      "LON":-87.712359,
+      "LAT":41.938132
     },
     {
       "LINE":"blue",
       "STATION":41020,
       "STATION_NAME":"Logan Square",
-      "LAT":0,
-      "LON":0
+      "LON":-87.708541,
+      "LAT":41.929728
     },
     {
       "LINE":"blue",
       "STATION":40570,
       "STATION_NAME":"California",
-      "LAT":0,
-      "LON":0
+      "LON":-87.69689,
+      "LAT":41.921939
     },
     {
       "LINE":"blue",
       "STATION":40670,
       "STATION_NAME":"Western (N)",
-      "LAT":0,
-      "LON":0
+      "LON":-87.687364,
+      "LAT":41.916157
     },
     {
       "LINE":"blue",
       "STATION":40590,
       "STATION_NAME":"Damen",
-      "LAT":0,
-      "LON":0
+      "LON":-87.677437,
+      "LAT":41.909744
     },
     {
       "LINE":"blue",
       "STATION":40320,
       "STATION_NAME":"Division",
-      "LAT":0,
-      "LON":0
+      "LON":-87.666496,
+      "LAT":41.903355
     },
     {
       "LINE":"blue",
       "STATION":41410,
       "STATION_NAME":"Chicago",
-      "LAT":0,
-      "LON":0
+      "LON":-87.655214,
+      "LAT":41.896075
     },
     {
       "LINE":"blue",
       "STATION":40490,
       "STATION_NAME":"Grand",
-      "LAT":0,
-      "LON":0
+      "LON":-87.647578,
+      "LAT":41.891189
     },
     {
       "LINE":"blue",
       "STATION":40380,
       "STATION_NAME":"Clark/Lake",
-      "LAT":0,
-      "LON":0
+      "LON":-87.630886,
+      "LAT":41.885737
     },
     {
       "LINE":"blue",
       "STATION":40370,
       "STATION_NAME":"Washington",
-      "LAT":0,
-      "LON":0
+      "LON":-87.62944,
+      "LAT":41.883164
     },
     {
       "LINE":"blue",
       "STATION":40790,
       "STATION_NAME":"Monroe",
-      "LAT":0,
-      "LON":0
+      "LON":-87.629378,
+      "LAT":41.880703
     },
     {
       "LINE":"blue",
       "STATION":40070,
       "STATION_NAME":"Jackson",
-      "LAT":0,
-      "LON":0
+      "LON":-87.629296,
+      "LAT":41.878183
     },
     {
       "LINE":"blue",
       "STATION":41340,
       "STATION_NAME":"LaSalle",
-      "LAT":0,
-      "LON":0
+      "LON":-87.631722,
+      "LAT":41.875568
     },
     {
       "LINE":"blue",
       "STATION":40430,
       "STATION_NAME":"Clinton",
-      "LAT":0,
-      "LON":0
+      "LON":-87.640984,
+      "LAT":41.875539
     },
     {
       "LINE":"blue",
       "STATION":40350,
       "STATION_NAME":"UIC-Halsted",
-      "LAT":0,
-      "LON":0
+      "LON":-87.649707,
+      "LAT":41.875474
     },
     {
       "LINE":"blue",
       "STATION":40470,
       "STATION_NAME":"Racine",
-      "LAT":0,
-      "LON":0
+      "LON":-87.659458,
+      "LAT":41.87592
     },
     {
       "LINE":"blue",
       "STATION":40810,
       "STATION_NAME":"Illinois Medical District",
-      "LAT":0,
-      "LON":0
+      "LON":-87.673932,
+      "LAT":41.875706
     },
     {
       "LINE":"blue",
       "STATION":40220,
       "STATION_NAME":"Western (S)",
-      "LAT":0,
-      "LON":0
+      "LON":-87.688436,
+      "LAT":41.875478
     },
     {
       "LINE":"blue",
       "STATION":40250,
       "STATION_NAME":"Kedzie-Homan",
-      "LAT":0,
-      "LON":0
+      "LON":-87.70604,
+      "LAT":41.874341
     },
     {
       "LINE":"blue",
       "STATION":40920,
       "STATION_NAME":"Pulaski",
-      "LAT":0,
-      "LON":0
+      "LON":-87.725663,
+      "LAT":41.873797
     },
     {
       "LINE":"blue",
       "STATION":40970,
       "STATION_NAME":"Cicero",
-      "LAT":0,
-      "LON":0
+      "LON":-87.745154,
+      "LAT":41.871574
     },
     {
       "LINE":"blue",
       "STATION":40010,
       "STATION_NAME":"Austin",
-      "LAT":0,
-      "LON":0
+      "LON":-87.776812,
+      "LAT":41.870851
     },
     {
       "LINE":"blue",
       "STATION":40180,
       "STATION_NAME":"Oak Park",
-      "LAT":0,
-      "LON":0
+      "LON":-87.791602,
+      "LAT":41.872108
     },
     {
       "LINE":"blue",
       "STATION":40980,
       "STATION_NAME":"Harlem",
-      "LAT":0,
-      "LON":0
+      "LON":-87.806961,
+      "LAT":41.87349
     },
     {
       "LINE":"blue",
       "STATION":40390,
       "STATION_NAME":"Forest Park",
-      "LAT":0,
-      "LON":0
+      "LON":-87.817318,
+      "LAT":41.874257
     }
   ]
 }

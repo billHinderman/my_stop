@@ -4,211 +4,211 @@
       "LINE":"green",
       "STATION":40020,
       "STATION_NAME":"Harlem/Lake",
-      "LAT":0,
-      "LON":0
+      "LON":-87.803176,
+      "LAT":41.886848
     },
     {
       "LINE":"green",
       "STATION":41350,
       "STATION_NAME":"Oak Park",
-      "LAT":0,
-      "LON":0
+      "LON":-87.793783,
+      "LAT":41.886988
     },
     {
       "LINE":"green",
       "STATION":40610,
       "STATION_NAME":"Ridgeland",
-      "LAT":0,
-      "LON":0
+      "LON":-87.783661,
+      "LAT":41.887159
     },
     {
       "LINE":"green",
       "STATION":41260,
       "STATION_NAME":"Austin",
-      "LAT":0,
-      "LON":0
+      "LON":-87.774135,
+      "LAT":41.887293
     },
     {
       "LINE":"green",
       "STATION":40280,
       "STATION_NAME":"Central",
-      "LAT":0,
-      "LON":0
+      "LON":-87.76565,
+      "LAT":41.887389
     },
     {
       "LINE":"green",
       "STATION":40700,
       "STATION_NAME":"Laramie",
-      "LAT":0,
-      "LON":0
+      "LON":-87.754986,
+      "LAT":41.887163,
     },
     {
       "LINE":"green",
       "STATION":40480,
       "STATION_NAME":"Cicero",
-      "LAT":0,
-      "LON":0
+      "LON":-87.744698,
+      "LAT":41.886519
     },
     {
       "LINE":"green",
       "STATION":40030,
       "STATION_NAME":"Pulaski",
-      "LAT":0,
-      "LON":0
+      "LON":-87.725404,
+      "LAT":41.885412
     },
     {
       "LINE":"green",
       "STATION":41670,
       "STATION_NAME":"Conservatory-Central Park Drive",
-      "LAT":0,
-      "LON":0
+      "LON":-87.716523,
+      "LAT":41.884904
     },
     {
       "LINE":"green",
       "STATION":41070,
       "STATION_NAME":"Kedzie",
-      "LAT":0,
-      "LON":0
+      "LON":-87.706155,
+      "LAT":41.884321
     },
     {
       "LINE":"green",
       "STATION":41360,
       "STATION_NAME":"California",
-      "LAT":0,
-      "LON":0
+      "LON":-87.696234,
+      "LAT":41.88422
     },
     {
       "LINE":"green",
       "STATION":40170,
       "STATION_NAME":"Ashland",
-      "LAT":0,
-      "LON":0
+      "LON":-87.666969,
+      "LAT":41.885269
     },
     {
       "LINE":"green",
       "STATION":41510,
       "STATION_NAME":"Morgan",
-      "LAT":0,
-      "LON":0
+      "LON":-87.652193,
+      "LAT":41.885586
     },
     {
       "LINE":"green",
       "STATION":41160,
       "STATION_NAME":"Clinton",
-      "LAT":0,
-      "LON":0
+      "LON":-87.641782,
+      "LAT":41.885678
     },
     {
       "LINE":"green",
       "STATION":40380,
       "STATION_NAME":"Clark/Lake",
-      "LAT":0,
-      "LON":0
+      "LON":-87.630886,
+      "LAT":41.885737
     },
     {
       "LINE":"green",
       "STATION":40260,
       "STATION_NAME":"State/Lake",
-      "LAT":0,
-      "LON":0
+      "LON":-87.627835,
+      "LAT":41.88574
     },
     {
       "LINE":"green",
       "STATION":40200,
       "STATION_NAME":"Randolph/Wabash",
-      "LAT":0,
-      "LON":0
+      "LON":-87.626149,
+      "LAT":41.884431
     },
     {
       "LINE":"green",
       "STATION":40640,
       "STATION_NAME":"Madison/Wabash",
-      "LAT":0,
-      "LON":0
+      "LON":-87.626098,
+      "LAT":41.882023
     },
     {
       "LINE":"green",
       "STATION":40680,
       "STATION_NAME":"Adams/Wabash",
-      "LAT":0,
-      "LON":0
+      "LON":-87.626037,
+      "LAT":41.879507
     },
     {
       "LINE":"green",
       "STATION":41400,
       "STATION_NAME":"Roosevelt",
-      "LAT":0,
-      "LON":0
+      "LON":-87.62659,
+      "LAT":41.867405
     },
     {
       "LINE":"green",
       "STATION":41120,
       "STATION_NAME":"35th-Bronzeville-IIT",
-      "LAT":0,
-      "LON":0
+      "LON":-87.625826,
+      "LAT":41.831677
     },
     {
       "LINE":"green",
       "STATION":40300,
       "STATION_NAME":"Indiana",
-      "LAT":0,
-      "LON":0
+      "LON":-87.621371,
+      "LAT":41.821732
     },
     {
       "LINE":"green",
       "STATION":41270,
       "STATION_NAME":"43rd",
-      "LAT":0,
-      "LON":0
+      "LON":-87.619021,
+      "LAT":41.816462
     },
     {
       "LINE":"green",
       "STATION":41080,
       "STATION_NAME":"47th",
-      "LAT":0,
-      "LON":0
+      "LON":-87.618826,
+      "LAT":41.809209
     },
     {
       "LINE":"green",
       "STATION":40130,
       "STATION_NAME":"51st",
-      "LAT":0,
-      "LON":0
+      "LON":-87.618487,
+      "LAT":41.80209
     },
     {
       "LINE":"green",
       "STATION":40510,
       "STATION_NAME":"Garfield",
-      "LAT":0,
-      "LON":0
+      "LON":-87.618327,
+      "LAT":41.795172
     },
     {
       "LINE":"green",
       "STATION":41140,
       "STATION_NAME":"King Drive",
-      "LAT":0,
-      "LON":0
+      "LON":-87.615546,
+      "LAT":41.78013
     },
     {
       "LINE":"green",
       "STATION":40720,
       "STATION_NAME":"Cottage Grove",
-      "LAT":0,
-      "LON":0
+      "LON":-87.605857,
+      "LAT":41.780309
     },
     {
       "LINE":"green",
       "STATION":40940,
       "STATION_NAME":"Halsted",
-      "LAT":0,
-      "LON":0
+      "LON":-87.737875,
+      "LAT":41.78661
     },
     {
       "LINE":"green",
       "STATION":40290,
       "STATION_NAME":"Ashland/63rd",
-      "LAT":0,
-      "LON":0
+      "LON":-87.663766,
+      "LAT":41.77886
     }
   ]
 }
