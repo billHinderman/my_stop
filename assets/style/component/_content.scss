@@ -1,15 +1,19 @@
 .menu-open #content {
-  -moz-filter: blur(2px);
-  -webkit-filter: blur(2px);
-  filter: blur(2px);
+  -moz-filter: blur(4px);
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
 }
 
 #content {
+  -moz-filter: blur(0);
+  -webkit-filter: blur(0);
+  filter: blur(0);
   padding: 0;
   position: relative;
   max-width: 768px;
   margin: auto;
   min-height: 320px;
+  @include transition(all .4s);
   a {
     color: $white;
   }

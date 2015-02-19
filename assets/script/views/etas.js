@@ -16,18 +16,22 @@ define([
     },
 
     initialize: function() {
-      EtasCollection = this.options.collection;
+      $('#etas-content').unbind();
+      this.EtasCollection = this.options.collection;
       closeUrl = this.options.close;
       _.bindAll(this, 'addOneEta', 'addAllEtas', 'render');
 
-      EtasCollection.bind('add',     this.addOneEta);
-      EtasCollection.bind('reset',   this.addAllEtas);
+      this.EtasCollection.bind('add',     this.addOneEta);
+      this.EtasCollection.bind('reset',   this.addAllEtas);
+
+      $(window).on("resize", this.resizeModal);
     },
 
     render: function() {
       this.$el.html(etasTemplate);
       this.$('#etas-info').append('');
-      $(this.el).css('max-height',''+$( window ).height()-32+'px');
+      $(this.el).css('max-height',''+$(window).height()-32+'px');
+      $(this.el).css('width',''+$('#content').width()-32+'px');
       this.$('#eta-close').attr('href',closeUrl);
       $('body').removeClass('menu-open');
     },
@@ -39,17 +43,23 @@ define([
 
     addAllEtas: function() {
       this.$('#etas-spinner').remove();
-      if(EtasCollection.length > 0) {
-      EtasCollection.each(this.addOneEta);
+      if(this.EtasCollection.length > 0) {
+        this.EtasCollection.each(this.addOneEta);
       } else {
-        this.$('#etas-list').replaceWith('<h3>No trains.</h3>')
+        this.$('#etas-list').empty();
+        this.$('#etas-list').append('<li class="no-trains"><h3>No trains.</h3></li>')
       }
     },
 
     refreshEtas: function(e) {
       e.preventDefault();
       this.$('#etas-list').empty();
-      EtasCollection.fetch();
+      this.EtasCollection.fetch();
+    },
+
+    resizeModal: function() {
+      $("#etas-content").css('max-height',''+$(window).height()-32+'px');
+      $("#etas-content").css('width',''+$('#content').width()-32+'px');
     },
   });
 
