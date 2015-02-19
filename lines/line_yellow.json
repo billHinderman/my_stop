@@ -3,17 +3,23 @@
     {
       "LINE":"yellow",
       "STATION":40140,
-      "STATION_NAME":"Dempster-Skokie"
+      "STATION_NAME":"Dempster-Skokie",
+      "LON":-87.751919,
+      "LAT":42.038951
     },
     {
       "LINE":"yellow",
       "STATION":41680,
-      "STATION_NAME":"Oakton-Skokie"
+      "STATION_NAME":"Oakton-Skokie",
+      "LON":-87.74722084,
+      "LAT":42.02624348
     },
     {
       "LINE":"yellow",
       "STATION":40900,
-      "STATION_NAME":"Howard"
+      "STATION_NAME":"Howard",
+      "LON":-87.672892,
+      "LAT":42.019063
     }
   ]
 }

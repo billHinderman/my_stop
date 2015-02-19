@@ -3,87 +3,121 @@
     {
       "LINE":"orange",
       "STATION":40930,
-      "STATION_NAME":"Midway"
+      "STATION_NAME":"Midway",
+      "LAT":0,
+      "LON":0
     },
     {
       "LINE":"orange",
       "STATION":40960,
-      "STATION_NAME":"Pulaski"
+      "STATION_NAME":"Pulaski",
+      "LAT":0,
+      "LON":0
     },
     {
       "LINE":"orange",
       "STATION":41150,
-      "STATION_NAME":"Kedzie"
+      "STATION_NAME":"Kedzie",
+      "LAT":0,
+      "LON":0
     },
     {
       "LINE":"orange",
       "STATION":40310,
-      "STATION_NAME":"Western"
+      "STATION_NAME":"Western",
+      "LAT":0,
+      "LON":0
     },
     {
       "LINE":"orange",
       "STATION":40120,
-      "STATION_NAME":"35th/Archer"
+      "STATION_NAME":"35th/Archer",
+      "LAT":0,
+      "LON":0
     },
     {
       "LINE":"orange",
       "STATION":41060,
-      "STATION_NAME":"Ashland"
+      "STATION_NAME":"Ashland",
+      "LAT":0,
+      "LON":0
     },
     {
       "LINE":"orange",
       "STATION":41130,
-      "STATION_NAME":"Halsted"
+      "STATION_NAME":"Halsted",
+      "LAT":0,
+      "LON":0
     },
     {
       "LINE":"orange",
       "STATION":41400,
-      "STATION_NAME":"Roosevelt"
+      "STATION_NAME":"Roosevelt",
+      "LAT":0,
+      "LON":0
     },
     {
       "LINE":"orange",
       "STATION":40850,
-      "STATION_NAME":"Harold Washington Library"
+      "STATION_NAME":"Harold Washington Library",
+      "LAT":0,
+      "LON":0
     },
     {
       "LINE":"orange",
       "STATION":40160,
-      "STATION_NAME":"LaSalle/Van Buren"
+      "STATION_NAME":"LaSalle/Van Buren",
+      "LAT":0,
+      "LON":0
     },
     {
       "LINE":"orange",
       "STATION":40040,
-      "STATION_NAME":"Quincy"
+      "STATION_NAME":"Quincy",
+      "LAT":0,
+      "LON":0
     },
     {
       "LINE":"orange",
       "STATION":40730,
-      "STATION_NAME":"Washington/Wells"
+      "STATION_NAME":"Washington/Wells",
+      "LAT":0,
+      "LON":0
     },
     {
       "LINE":"orange",
       "STATION":40380,
-      "STATION_NAME":"Clark/Lake"
+      "STATION_NAME":"Clark/Lake",
+      "LAT":0,
+      "LON":0
     },
     {
       "LINE":"orange",
       "STATION":40260,
-      "STATION_NAME":"State/Lake"
+      "STATION_NAME":"State/Lake",
+      "LAT":0,
+      "LON":0
     },
     {
       "LINE":"orange",
       "STATION":40200,
-      "STATION_NAME":"Randolph/Wabash"
+      "STATION_NAME":"Randolph/Wabash",
+      "LAT":0,
+      "LON":0
     },
     {
       "LINE":"orange",
       "STATION":40640,
-      "STATION_NAME":"Madison/Wabash"
+      "STATION_NAME":"Madison/Wabash",
+      "LAT":0,
+      "LON":0
     },
     {
       "LINE":"orange",
       "STATION":40680,
-      "STATION_NAME":"Adams/Wabash"
+      "STATION_NAME":"Adams/Wabash",
+      "LAT":0,
+      "LON":0
     }
   ]
 }

@@ -2905,7 +2905,6 @@ submit.disabled, submit:disabled,
   margin: 1em;
   position: fixed;
   min-height: 288px;
-  overflow-y: auto;
   min-width: 288px;
   max-width: 768px;
   top: 0;
@@ -2920,12 +2919,17 @@ submit.disabled, submit:disabled,
   z-index: -1; }
 
 #etas-list {
-  background: linear-gradient(#fdfdfd 30%, rgba(255, 255, 255, 0)), linear-gradient(rgba(255, 255, 255, 0), #fdfdfd 75%) 0 100%, radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0)), radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0)) 0 100%;
-  background-attachment: local, local, scroll, scroll;
-  background-repeat: no-repeat;
-  background-size: 100% 24px, 100% 24px, 100% 8px, 100% 8px;
-  margin: 5em 1em 2em;
+  margin: 4em 1em 2em;
+  min-height: 208px;
+  overflow-y: auto;
+  padding-top: 1em;
   list-style-type: none; }
+  @media screen and (max-height: 600px) {
+    #etas-list {
+      background: linear-gradient(#fdfdfd 30%, rgba(255, 255, 255, 0)), linear-gradient(rgba(255, 255, 255, 0), #fdfdfd 75%) 0 100%, radial-gradient(farthest-side at 50% 0, rgba(35, 31, 32, 0.25), rgba(35, 31, 32, 0)), radial-gradient(farthest-side at 50% 100%, rgba(35, 31, 32, 0.25), rgba(35, 31, 32, 0)) 0 100%;
+      background-attachment: local, local, scroll, scroll;
+      background-repeat: no-repeat;
+      background-size: 100% 24px, 100% 24px, 100% 8px, 100% 8px; } }
 
 .eta {
   margin-bottom: 1em; }

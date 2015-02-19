@@ -30,6 +30,7 @@ define([
     render: function() {
       this.$el.html(etasTemplate);
       this.$('#etas-info').append('');
+      this.$('#etas-list').css('max-height',''+$(window).height()-112+'px');
       $(this.el).css('max-height',''+$(window).height()-32+'px');
       $(this.el).css('width',''+$('#content').width()-32+'px');
       this.$('#eta-close').attr('href',closeUrl);
@@ -58,6 +59,7 @@ define([
     },
 
     resizeModal: function() {
+      this.$('#etas-list').css('max-height',''+$(window).height()-112+'px');
       $("#etas-content").css('max-height',''+$(window).height()-32+'px');
       $("#etas-content").css('width',''+$('#content').width()-32+'px');
     },
