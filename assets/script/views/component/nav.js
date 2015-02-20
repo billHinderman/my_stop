@@ -13,6 +13,7 @@ define([
 
     events: {
       'click .nav-toggle' : 'toggleNav',
+      'click .route' : 'closeNav',
     },
 
     initialize: function() {
@@ -41,6 +42,10 @@ define([
       event.preventDefault();
       $('body').toggleClass('menu-open');
     },
+
+    closeNav: function() {
+      $('body').removeClass('menu-open');
+    }
   });
 
   return NavView;

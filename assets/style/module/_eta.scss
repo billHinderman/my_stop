@@ -62,11 +62,19 @@
 }
 #etas-content #etas-nav {
   font-size: 2em;
-  padding: .25em;
+  padding: .25em .25em .25em .5em;
   position: absolute;
   text-align: right;
   top: 0;
   width: 100%;
+}
+#etas-nav h2 {
+  color: $white;
+  font-size: .5em;
+  font-weight: normal;
+  float: left;
+  line-height: 33px;
+  vertical-align: middle;
 }
 #etas-content h3 {
   font-weight: bold;

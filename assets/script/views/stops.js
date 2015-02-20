@@ -43,24 +43,53 @@ define([
 
     geolocate: function(event) {
       event.preventDefault();
-      getLocation();
       $('<svg id="geo-spinner" class="spinner" role="progressbar" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg"> <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle> </svg>').appendTo($('#geolocate-toggle'));
-      function getLocation() {
-        if (navigator.geolocation) {
-          navigator.geolocation.getCurrentPosition(showPosition);
-        } else {
-          alert('No geolocate.');
-        }
-      }
-      function showPosition(position) {
-        var lat = Math.round(position.coords.latitude * 100) / 100;
-        var lon = Math.round(position.coords.longitude * 100) / 100;
-        alert('Hang tight, I\'m working on this. You\'re at '+lat+','+lon+'');
-        console.log("Latitude: " + position.coords.latitude + 
-        " Longitude: " + position.coords.longitude); 
-        $('#geo-spinner').remove();
-      }
+      this.getClosestStop();
     },
+
+    getClosestStop: function() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(compareStops);
+      } else {
+        console.log('No geolocate.');
+      }
+
+      function compareStops(position) {
+        var userLat = position.coords.latitude;
+        var userLon = position.coords.longitude;
+        var closest = 0;
+        var closestDistance = 999999;
+        StopsCollection.each(function(stop) {
+          var stopLat = stop.get('LAT');
+          var stopLon = stop.get('LON');
+          var distance = getDistance(userLat,userLon,stopLat,stopLon);
+          if(distance < closestDistance) {
+            closestDistance = distance;
+            closest = stop;
+          }
+        });
+        $('#geo-spinner').remove();
+        window.location = closest.get('DISPLAY_URL');
+      }
+      function getDistance(lat1,lon1,lat2,lon2) {
+        var R = 6371; // Radius of the earth in km
+        var dLat = deg2rad(lat2-lat1);  // deg2rad below
+        var dLon = deg2rad(lon2-lon1); 
+        var a = 
+          Math.sin(dLat/2) * Math.sin(dLat/2) +
+          Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat2)) * 
+          Math.sin(dLon/2) * Math.sin(dLon/2)
+          ; 
+        var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
+        var d = R * c; // Distance in km
+        var miD = d/1.609; // Distance in mi
+        return miD;
+      }
+
+      function deg2rad(deg) {
+        return deg * (Math.PI/180);
+      }
+    }
   });
 
   return StopsView;

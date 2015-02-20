@@ -22,7 +22,7 @@ define([
 
     initialize: function() {
       if(this.get('isApp') === '1') {
-        this.set({'dateTime':'Approaching'});
+        this.set({'dateTime':'Due'});
         this.set({'distance':0});
       } else {
         var prdt = this.makeDate(this.get('prdt'));

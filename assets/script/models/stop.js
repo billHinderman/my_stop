@@ -9,8 +9,8 @@ define([
       'LINE':'',
       'STATION':0,
       'STATION_NAME':'',
-      'GEO_LAT':'',
-      'GEO_LON':'',
+      'LAT':'',
+      'LON':'',
     },
 
     initialize: function() {

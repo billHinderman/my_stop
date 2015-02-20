@@ -66,16 +66,22 @@ define([
 
       var lineUrl = './lines/line_'+LINE+'.json';
       var stopsCollection = new StopsCollection([],{apiUrl: lineUrl});
-      stopsCollection.fetch();
+      var currentStop;
+      stopsCollection.fetch({
+        success: function(){
+          currentStop = stopsCollection.where({STATION:parseInt(PARENT_STOP_ID)})[0].get('STATION_NAME');
+          var ctaUrl = 'http://cta.billhinderman.com/assets/script/rebar/proxy.php?stop='+PARENT_STOP_ID+'&rt='+LINE;
+          var closeUrl = '#/'+LINE;
+          var etasCollection = new EtasCollection([],{apiUrl: ctaUrl});
+          etasCollection.fetch();
+          var view = new EtasView({collection: etasCollection, stopNm:currentStop, close:closeUrl});
+          view.render();
+        }
+      });
+
       var stopsView = new StopsView({collection: stopsCollection});
       stopsView.render();
 
-      var ctaUrl = 'http://cta.billhinderman.com/assets/script/rebar/proxy.php?stop='+PARENT_STOP_ID+'&rt='+LINE;
-      var closeUrl = '#/'+LINE;
-      var etasCollection = new EtasCollection([],{apiUrl: ctaUrl});
-      etasCollection.fetch();
-      var view = new EtasView({collection: etasCollection, close:closeUrl});
-      view.render();
     });
 
     var headerView = new HeaderView();

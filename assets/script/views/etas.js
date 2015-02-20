@@ -18,6 +18,8 @@ define([
     initialize: function() {
       $('#etas-content').unbind();
       this.EtasCollection = this.options.collection;
+      this.StopNm = this.options.stopNm;
+      console.log(this.StopNm);
       closeUrl = this.options.close;
       _.bindAll(this, 'addOneEta', 'addAllEtas', 'render');
 
@@ -29,7 +31,7 @@ define([
 
     render: function() {
       this.$el.html(etasTemplate);
-      this.$('#etas-info').append('');
+      $('<h2 id="stop-eta">'+this.StopNm+'</h2>').prependTo(this.$("#etas-nav"));
       this.$('#etas-list').css('max-height',''+$(window).height()-112+'px');
       $(this.el).css('max-height',''+$(window).height()-32+'px');
       $(this.el).css('width',''+$('#content').width()-32+'px');
@@ -54,6 +56,7 @@ define([
 
     refreshEtas: function(e) {
       e.preventDefault();
+      $('<svg id="etas-spinner" class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg"><circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg>').prependTo('#etas-content');
       this.$('#etas-list').empty();
       this.EtasCollection.fetch();
     },

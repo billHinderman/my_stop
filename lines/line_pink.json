@@ -4,162 +4,162 @@
       "LINE":"pink",
       "STATION":40580,
       "STATION_NAME":"54th/Cermak",
-      "LAT":0,
-      "LON":0
+      "LON":-87.75669201,
+      "LAT":41.85177331
     },
     {
       "LINE":"pink",
       "STATION":40420,
       "STATION_NAME":"Cicero",
-      "LAT":0,
-      "LON":0
+      "LON":-87.745336,
+      "LAT":41.85182
     },
     {
       "LINE":"pink",
       "STATION":40600,
       "STATION_NAME":"Kostner",
-      "LAT":0,
-      "LON":0
+      "LON":-87.733258,
+      "LAT":41.853751
     },
     {
       "LINE":"pink",
       "STATION":40150,
       "STATION_NAME":"Pulaski",
-      "LAT":0,
-      "LON":0
+      "LON":-87.724311,
+      "LAT":41.853732
     },
     {
       "LINE":"pink",
       "STATION":40780,
       "STATION_NAME":"Central Park",
-      "LAT":0,
-      "LON":0
+      "LON":-87.714842,
+      "LAT":41.853839
     },
     {
       "LINE":"pink",
       "STATION":41040,
       "STATION_NAME":"Kedzie",
-      "LAT":0,
-      "LON":0
+      "LON":-87.705408,
+      "LAT":41.853964
     },
     {
       "LINE":"pink",
       "STATION":40440,
       "STATION_NAME":"California",
-      "LAT":0,
-      "LON":0
+      "LON":-87.694774,
+      "LAT":41.854109
     },
     {
       "LINE":"pink",
       "STATION":40740,
       "STATION_NAME":"Western",
-      "LAT":0,
-      "LON":0
+      "LON":-87.685129,
+      "LAT":41.854225
     },
     {
       "LINE":"pink",
       "STATION":40210,
       "STATION_NAME":"Damen",
-      "LAT":0,
-      "LON":0
+      "LON":-87.675975,
+      "LAT":41.854517
     },
     {
       "LINE":"pink",
       "STATION":40830,
       "STATION_NAME":"18th",
-      "LAT":0,
-      "LON":0
+      "LON":-87.669147,
+      "LAT":41.857908
     },
     {
       "LINE":"pink",
       "STATION":41030,
       "STATION_NAME":"Polk",
-      "LAT":0,
-      "LON":0
+      "LON":-87.66953,
+      "LAT":41.871551
     },
     {
       "LINE":"pink",
       "STATION":40170,
       "STATION_NAME":"Ashland",
-      "LAT":0,
-      "LON":0
+      "LON":-87.666969,
+      "LAT":41.885269
     },
     {
       "LINE":"pink",
       "STATION":41510,
       "STATION_NAME":"Morgan",
-      "LAT":0,
-      "LON":0
+      "LON":-87.652193,
+      "LAT":41.885586
     },
     {
       "LINE":"pink",
       "STATION":41160,
       "STATION_NAME":"Clinton",
-      "LAT":0,
-      "LON":0
+      "LON":-87.641782,
+      "LAT":41.885678
     },
     {
       "LINE":"pink",
       "STATION":40380,
       "STATION_NAME":"Clark/Lake",
-      "LAT":0,
-      "LON":0
+      "LON":-87.630886,
+      "LAT":41.885737
     },
     {
       "LINE":"pink",
       "STATION":40260,
       "STATION_NAME":"State/Lake",
-      "LAT":0,
-      "LON":0
+      "LON":-87.627835,
+      "LAT":41.88574
     },
     {
       "LINE":"pink",
       "STATION":40200,
       "STATION_NAME":"Randolph/Wabash",
-      "LAT":0,
-      "LON":0
+      "LON":-87.626149,
+      "LAT":41.884431
     },
     {
       "LINE":"pink",
       "STATION":40640,
       "STATION_NAME":"Madison/Wabash",
-      "LAT":0,
-      "LON":0
+      "LON":-87.626098,
+      "LAT":41.882023
     },
     {
       "LINE":"pink",
       "STATION":40680,
       "STATION_NAME":"Adams/Wabash",
-      "LAT":0,
-      "LON":0
+      "LON":-87.626037,
+      "LAT":41.879507
     },
     {
       "LINE":"pink",
       "STATION":40850,
       "STATION_NAME":"Harold Washington Library",
-      "LAT":0,
-      "LON":0
+      "LON":-87.628196,
+      "LAT":41.876862
     },
     {
       "LINE":"pink",
       "STATION":40160,
       "STATION_NAME":"LaSalle/Van Buren",
-      "LAT":0,
-      "LON":0
+      "LON":-87.631739,
+      "LAT":41.8768
     },
     {
       "LINE":"pink",
       "STATION":40040,
       "STATION_NAME":"Quincy",
-      "LAT":0,
-      "LON":0
+      "LON":-87.63374,
+      "LAT":41.878723
     },
     {
       "LINE":"pink",
       "STATION":40730 ,
       "STATION_NAME":"Washington/Wells",
-      "LAT":0,
-      "LON":0
+      "LON":-87.63378,
+      "LAT":41.882695
     }
   ]
 }

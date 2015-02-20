@@ -4,232 +4,232 @@
       "LINE":"red",
       "STATION":40900,
       "STATION_NAME":"Howard",
-      "LAT":0,
-      "LON":0
+      "LON":-87.672892,
+      "LAT":42.019063
     },
     {
       "LINE":"red",
       "STATION":41190,
       "STATION_NAME":"Jarvis",
-      "LAT":0,
-      "LON":0
+      "LON":-87.669092,
+      "LAT":42.015876
     },
     {
       "LINE":"red",
       "STATION":40100,
       "STATION_NAME":"Morse",
-      "LAT":0,
-      "LON":0
+      "LON":-87.665909,
+      "LAT":42.008362
     },
     {
       "LINE":"red",
       "STATION":41300,
       "STATION_NAME":"Loyola",
-      "LAT":0,
-      "LON":0
+      "LON":-87.661061,
+      "LAT":42.001073
     },
     {
       "LINE":"red",
       "STATION":40760,
       "STATION_NAME":"Granville",
-      "LAT":0,
-      "LON":0
+      "LON":-87.659202,
+      "LAT":41.993664
     },
     {
       "LINE":"red",
       "STATION":40880,
       "STATION_NAME":"Thorndale",
-      "LAT":0,
-      "LON":0
+      "LON":-87.659076,
+      "LAT":41.990259
     },
     {
       "LINE":"red",
       "STATION":41380,
       "STATION_NAME":"Bryn Mawr",
-      "LAT":0,
-      "LON":0
+      "LON":-87.65884,
+      "LAT":41.983504
     },
     {
       "LINE":"red",
       "STATION":40340,
       "STATION_NAME":"Berwyn",
-      "LAT":0,
-      "LON":0
+      "LON":-87.658668,
+      "LAT":41.977984
     },
     {
       "LINE":"red",
       "STATION":41200,
       "STATION_NAME":"Argyle",
-      "LAT":0,
-      "LON":0
+      "LON":-87.65853,
+      "LAT":41.973453
     },
     {
       "LINE":"red",
       "STATION":40770,
       "STATION_NAME":"Lawrence",
-      "LAT":0,
-      "LON":0
+      "LON":-87.754986,
+      "LAT":41.887163
     },
     {
       "LINE":"red",
       "STATION":40540,
       "STATION_NAME":"Wilson",
-      "LAT":0,
-      "LON":0
+      "LON":-87.657588,
+      "LAT":41.964273
     },
     {
       "LINE":"red",
       "STATION":40080,
       "STATION_NAME":"Sheridan",
-      "LAT":0,
-      "LON":0
+      "LON":-87.654929,
+      "LAT":41.953775
     },
     {
       "LINE":"red",
       "STATION":41420,
       "STATION_NAME":"Addison",
-      "LAT":0,
-      "LON":0
+      "LON":-87.653626,
+      "LAT":41.947428
     },
     {
       "LINE":"red",
       "STATION":41320,
       "STATION_NAME":"Belmont",
-      "LAT":0,
-      "LON":0
+      "LON":-87.65338,
+      "LAT":41.939751
     },
     {
       "LINE":"red",
       "STATION":41220,
       "STATION_NAME":"Fullerton",
-      "LAT":0,
-      "LON":0
+      "LON":-87.652866,
+      "LAT":41.925051
     },
     {
       "LINE":"red",
       "STATION":40650,
       "STATION_NAME":"North/Clybourn",
-      "LAT":0,
-      "LON":0
+      "LON":-87.649177,
+      "LAT":41.910655
     },
     {
       "LINE":"red",
       "STATION":40630,
       "STATION_NAME":"Clark/Division",
-      "LAT":0,
-      "LON":0
+      "LON":-87.631412,
+      "LAT":41.90392
     },
     {
       "LINE":"red",
       "STATION":41450,
       "STATION_NAME":"Chicago",
-      "LAT":0,
-      "LON":0
+      "LON":-87.628176,
+      "LAT":41.896671
     },
     {
       "LINE":"red",
       "STATION":40330,
       "STATION_NAME":"Grand",
-      "LAT":0,
-      "LON":0
+      "LON":-87.628021,
+      "LAT":41.891665
     },
     {
       "LINE":"red",
       "STATION":41660,
       "STATION_NAME":"Lake",
-      "LAT":0,
-      "LON":0
+      "LON":-87.627813,
+      "LAT":41.884809
     },
     {
       "LINE":"red",
       "STATION":41090,
       "STATION_NAME":"Monroe",
-      "LAT":0,
-      "LON":0
+      "LON":-87.627696,
+      "LAT":41.880745
     },
     {
       "LINE":"red",
       "STATION":40560,
       "STATION_NAME":"Jackson",
-      "LAT":0,
-      "LON":0
+      "LON":-87.627596,
+      "LAT":41.878153
     },
     {
       "LINE":"red",
       "STATION":41490,
       "STATION_NAME":"Harrison",
-      "LAT":0,
-      "LON":0
+      "LON":-87.627479,
+      "LAT":41.874039
     },
     {
       "LINE":"red",
       "STATION":41400,
       "STATION_NAME":"Roosevelt",
-      "LAT":0,
-      "LON":0
+      "LON":-87.62659,
+      "LAT":41.867405
     },
     {
       "LINE":"red",
       "STATION":41000,
       "STATION_NAME":"Cermak-Chinatown",
-      "LAT":0,
-      "LON":0
+      "LON":-87.630968,
+      "LAT":41.853206
     },
     {
       "LINE":"red",
       "STATION":40190,
       "STATION_NAME":"Sox-35th",
-      "LAT":0,
-      "LON":0
+      "LON":-87.630636,
+      "LAT":41.831191
     },
     {
       "LINE":"red",
       "STATION":41230,
       "STATION_NAME":"47th",
-      "LAT":0,
-      "LON":0
+      "LON":-87.63094,
+      "LAT":41.810318
     },
     {
       "LINE":"red",
       "STATION":41170,
       "STATION_NAME":"Garfield",
-      "LAT":0,
-      "LON":0
+      "LON":-87.631157,
+      "LAT":41.79542
     },
     {
       "LINE":"red",
       "STATION":40910,
       "STATION_NAME":"63rd",
-      "LAT":0,
-      "LON":0
+      "LON":-87.630952,
+      "LAT":41.780536
     },
     {
       "LINE":"red",
       "STATION":40990,
       "STATION_NAME":"69th",
-      "LAT":0,
-      "LON":0
+      "LON":-87.625724,
+      "LAT":41.768367
     },
     {
       "LINE":"red",
       "STATION":40240,
       "STATION_NAME":"79th",
-      "LAT":0,
-      "LON":0
+      "LON":-87.625112,
+      "LAT":41.750419
     },
     {
       "LINE":"red",
       "STATION":41430,
       "STATION_NAME":"87th",
-      "LAT":0,
-      "LON":0
+      "LON":-87.624717,
+      "LAT":41.735372
     },
     {
       "LINE":"red",
       "STATION":40450,
       "STATION_NAME":"95th/Dan Ryan",
-      "LAT":0,
-      "LON":0
+      "LON":-87.624342,
+      "LAT":41.722377
     }
   ]
 }

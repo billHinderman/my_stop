@@ -4,120 +4,120 @@
       "LINE":"orange",
       "STATION":40930,
       "STATION_NAME":"Midway",
-      "LAT":0,
-      "LON":0
+      "LON":-87.737875,
+      "LAT":41.78661
     },
     {
       "LINE":"orange",
       "STATION":40960,
       "STATION_NAME":"Pulaski",
-      "LAT":0,
-      "LON":0
+      "LON":-87.724493,
+      "LAT":41.799756
     },
     {
       "LINE":"orange",
       "STATION":41150,
       "STATION_NAME":"Kedzie",
-      "LAT":0,
-      "LON":0
+      "LON":-87.704406,
+      "LAT":41.804236
     },
     {
       "LINE":"orange",
       "STATION":40310,
       "STATION_NAME":"Western",
-      "LAT":0,
-      "LON":0
+      "LON":-87.684019,
+      "LAT":41.804546
     },
     {
       "LINE":"orange",
       "STATION":40120,
       "STATION_NAME":"35th/Archer",
-      "LAT":0,
-      "LON":0
+      "LON":-87.680622,
+      "LAT":41.829353
     },
     {
       "LINE":"orange",
       "STATION":41060,
       "STATION_NAME":"Ashland",
-      "LAT":0,
-      "LON":0
+      "LON":-87.665317,
+      "LAT":41.839234
     },
     {
       "LINE":"orange",
       "STATION":41130,
       "STATION_NAME":"Halsted",
-      "LAT":0,
-      "LON":0
+      "LON":-87.648088,
+      "LAT":41.84678
     },
     {
       "LINE":"orange",
       "STATION":41400,
       "STATION_NAME":"Roosevelt",
-      "LAT":0,
-      "LON":0
+      "LON":-87.62659,
+      "LAT":41.867405
     },
     {
       "LINE":"orange",
       "STATION":40850,
       "STATION_NAME":"Harold Washington Library",
-      "LAT":0,
-      "LON":0
+      "LON":-87.628196,
+      "LAT":41.876862
     },
     {
       "LINE":"orange",
       "STATION":40160,
       "STATION_NAME":"LaSalle/Van Buren",
-      "LAT":0,
-      "LON":0
+      "LON":-87.631739,
+      "LAT":41.8768
     },
     {
       "LINE":"orange",
       "STATION":40040,
       "STATION_NAME":"Quincy",
-      "LAT":0,
-      "LON":0
+      "LON":-87.63374,
+      "LAT":41.878723
     },
     {
       "LINE":"orange",
       "STATION":40730,
       "STATION_NAME":"Washington/Wells",
-      "LAT":0,
-      "LON":0
+      "LON":-87.63378,
+      "LAT":41.882695
     },
     {
       "LINE":"orange",
       "STATION":40380,
       "STATION_NAME":"Clark/Lake",
-      "LAT":0,
-      "LON":0
+      "LON":-87.630886,
+      "LAT":41.885737
     },
     {
       "LINE":"orange",
       "STATION":40260,
       "STATION_NAME":"State/Lake",
-      "LAT":0,
-      "LON":0
+      "LON":-87.627835,
+      "LAT":41.88574
     },
     {
       "LINE":"orange",
       "STATION":40200,
       "STATION_NAME":"Randolph/Wabash",
-      "LAT":0,
-      "LON":0
+      "LON":-87.626149,
+      "LAT":41.884431
     },
     {
       "LINE":"orange",
       "STATION":40640,
       "STATION_NAME":"Madison/Wabash",
-      "LAT":0,
-      "LON":0
+      "LON":-87.626098,
+      "LAT":41.882023
     },
     {
       "LINE":"orange",
       "STATION":40680,
       "STATION_NAME":"Adams/Wabash",
-      "LAT":0,
-      "LON":0
+      "LON":-87.626037,
+      "LAT":41.879507
     }
   ]
 }
